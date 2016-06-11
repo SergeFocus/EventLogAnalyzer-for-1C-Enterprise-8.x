@@ -6,7 +6,7 @@
 			<dataSourceType>Local</dataSourceType>
 		</dataSource>
 		<dataSet xsi:type="DataSetObject">
-			<name>НаборДанных1</name>
+			<name>ДанныеЖурналаРегистрации</name>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Уровень</dataPath>
 				<field>Уровень</field>
@@ -487,35 +487,7 @@
 					</d5p1:item>
 				</title>
 				<valueType>
-					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:boolean</Type>
-					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
-					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
-					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
-					<Type xmlns="http://v8.1c.ru/8.1/data/core">ValueStorage</Type>
-					<Type xmlns="http://v8.1c.ru/8.1/data/core">UUID</Type>
-					<TypeSet xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:ExchangePlanRef</TypeSet>
-					<TypeSet xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:BusinessProcessRoutePointRef</TypeSet>
-					<TypeSet xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:BusinessProcessRef</TypeSet>
 					<TypeSet xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:AnyRef</TypeSet>
-					<TypeSet xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:DocumentRef</TypeSet>
-					<TypeSet xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:EnumRef</TypeSet>
-					<TypeSet xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:ChartOfCalculationTypesRef</TypeSet>
-					<TypeSet xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:TaskRef</TypeSet>
-					<TypeSet xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:ChartOfCharacteristicTypesRef</TypeSet>
-					<TypeSet xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:ChartOfAccountsRef</TypeSet>
-					<TypeSet xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef</TypeSet>
-					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
-						<Digits>0</Digits>
-						<FractionDigits>0</FractionDigits>
-						<AllowedSign>Any</AllowedSign>
-					</NumberQualifiers>
-					<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
-						<Length>0</Length>
-						<AllowedLength>Variable</AllowedLength>
-					</StringQualifiers>
-					<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
-						<DateFractions>DateTime</DateFractions>
-					</DateQualifiers>
 				</valueType>
 			</field>
 			<field xsi:type="DataSetFieldField">
@@ -1818,6 +1790,7 @@
 			<left xsi:type="dcscor:Field">Уровень</left>
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">1</right>
+			<viewMode>Normal</viewMode>
 			<userSettingID>5fa16f86-31d4-40e6-b01c-975c6f04ce26</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
@@ -1825,6 +1798,7 @@
 			<left xsi:type="dcscor:Field">Событие</left>
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">_$Access$_.Access</right>
+			<viewMode>Normal</viewMode>
 			<userSettingID>3567a0f4-8a6f-46bc-99ae-2589e42c8980</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
@@ -1832,6 +1806,8 @@
 			<left xsi:type="dcscor:Field">СтатусТранзакции</left>
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">1</right>
+			<viewMode>Normal</viewMode>
+			<userSettingID>afdf5f10-dcd1-469f-a2c4-5ed089dd9696</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<use>false</use>
@@ -1860,29 +1836,108 @@
 			<right xsi:type="xs:string">ВспомогательныйIPПорт</right>
 			<right xsi:type="xs:string">РазделениеДанныхСеанса</right>
 			<right xsi:type="xs:string">ПредставлениеРазделенияДанныхСеанса</right>
+			<viewMode>Normal</viewMode>
+			<userSettingID>1e83f917-e9ec-4966-aa2d-bd09662add8d</userSettingID>
 		</item>
 	</filter>
 	<dataParameters>
 		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
 			<dcscor:parameter>НачалоПериода</dcscor:parameter>
 			<dcscor:value xsi:type="v8:StandardBeginningDate">
-				<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
-				<v8:date>0001-01-01T00:00:00</v8:date>
+				<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
 			</dcscor:value>
+			<viewMode>Normal</viewMode>
 			<userSettingID>0c37492c-c0cb-4378-90b4-53d7f8eaef32</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
 			<dcscor:parameter>КонецПериода</dcscor:parameter>
-			<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+			<dcscor:value xsi:type="v8:StandardBeginningDate">
+				<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfNextDay</v8:variant>
+			</dcscor:value>
+			<viewMode>Normal</viewMode>
 			<userSettingID>4cb3046c-5d3a-4a29-ba77-4aeceb494b63</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
 			<dcscor:parameter>МаксимальноеКоличествоЗаписей</dcscor:parameter>
-			<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
+			<dcscor:value xsi:type="xs:decimal">100</dcscor:value>
+			<viewMode>Normal</viewMode>
 			<userSettingID>915a6337-36a8-4818-a21d-db9e01076319</userSettingID>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>Метаданные</dcscor:parameter>
+			<viewMode>Normal</viewMode>
+			<userSettingID>c909fcee-f02c-4f6b-a026-eecd58cddec5</userSettingID>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>Данные</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
+			<viewMode>Normal</viewMode>
+			<userSettingID>41a00913-c03f-478c-aa76-bafcf3d5258b</userSettingID>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>ПредставлениеДанных</dcscor:parameter>
+			<dcscor:value xsi:type="xs:string"/>
+			<viewMode>Normal</viewMode>
+			<userSettingID>fd4bfce1-727f-40ab-8518-4a18f59ea6d4</userSettingID>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>Комментарий</dcscor:parameter>
+			<dcscor:value xsi:type="xs:string"/>
+			<viewMode>Normal</viewMode>
+			<userSettingID>c1cc3a91-94b2-47dd-8d14-753730044b4b</userSettingID>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>ИмяПриложения</dcscor:parameter>
+			<viewMode>Normal</viewMode>
+			<userSettingID>7be87210-eba5-4bb9-b50c-5f1235df0903</userSettingID>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>Компьютер</dcscor:parameter>
+			<viewMode>Normal</viewMode>
+			<userSettingID>646775d7-6af0-4bb0-8750-61ad0bc5ac5d</userSettingID>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>Транзакция</dcscor:parameter>
+			<dcscor:value xsi:type="xs:string"/>
+			<viewMode>Normal</viewMode>
+			<userSettingID>47185c90-c578-4ce1-99c5-f2bdb910a1f1</userSettingID>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>Сеанс</dcscor:parameter>
+			<viewMode>Normal</viewMode>
+			<userSettingID>86de375e-cbc7-409b-bcf5-4c3086e87bb7</userSettingID>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>РабочийСервер</dcscor:parameter>
+			<viewMode>Normal</viewMode>
+			<userSettingID>a6980407-9347-463e-83da-4f62d9d70410</userSettingID>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>ОсновнойIPПорт</dcscor:parameter>
+			<viewMode>Normal</viewMode>
+			<userSettingID>da5db58c-98c5-46eb-826d-0b2f665ad2a3</userSettingID>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>ВспомогательныйIPПорт</dcscor:parameter>
+			<viewMode>Normal</viewMode>
+			<userSettingID>1cf89949-4de4-40af-8a50-afbb56a991f5</userSettingID>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>Пользователь</dcscor:parameter>
+			<viewMode>Normal</viewMode>
+			<userSettingID>38e088fe-77a2-499e-802f-f0accb3b9bd8</userSettingID>
 		</dcscor:item>
 	</dataParameters>
 	<order>
@@ -2293,6 +2348,7 @@
 			<left xsi:type="dcscor:Field">Уровень</left>
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">1</right>
+			<viewMode>Normal</viewMode>
 			<userSettingID>5fa16f86-31d4-40e6-b01c-975c6f04ce26</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
@@ -2304,6 +2360,7 @@
 			<right xsi:type="xs:string">_$Data$_.TotalsPeriodUpdate</right>
 			<right xsi:type="xs:string">_$Data$_.Unpost</right>
 			<right xsi:type="xs:string">_$Data$_.Update</right>
+			<viewMode>Normal</viewMode>
 			<userSettingID>3567a0f4-8a6f-46bc-99ae-2589e42c8980</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
@@ -2311,6 +2368,8 @@
 			<left xsi:type="dcscor:Field">СтатусТранзакции</left>
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">1</right>
+			<viewMode>Normal</viewMode>
+			<userSettingID>18b7b2b3-45ab-418d-8040-830688e2f1f8</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<left xsi:type="dcscor:Field">ПараметрыДанных.ПоляЖурналаРегистрации</left>
@@ -2321,6 +2380,14 @@
 			<right xsi:type="xs:string">Комментарий</right>
 			<right xsi:type="xs:string">Данные</right>
 			<right xsi:type="xs:string">ИмяПользователя</right>
+			<viewMode>Normal</viewMode>
+			<userSettingID>e265996a-081a-49c0-8222-c3ed5df4572a</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<left xsi:type="dcscor:Field">Данные</left>
+			<comparisonType>Filled</comparisonType>
+			<viewMode>Normal</viewMode>
+			<userSettingID>4f2a22b4-3256-4718-a4ac-267c8494fa87</userSettingID>
 		</item>
 	</filter>
 	<dataParameters>
@@ -2329,6 +2396,7 @@
 			<dcscor:value xsi:type="v8:StandardBeginningDate">
 				<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
 			</dcscor:value>
+			<viewMode>Normal</viewMode>
 			<userSettingID>0c37492c-c0cb-4378-90b4-53d7f8eaef32</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
@@ -2336,13 +2404,34 @@
 			<dcscor:value xsi:type="v8:StandardBeginningDate">
 				<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfNextDay</v8:variant>
 			</dcscor:value>
+			<viewMode>Normal</viewMode>
 			<userSettingID>4cb3046c-5d3a-4a29-ba77-4aeceb494b63</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:use>false</dcscor:use>
 			<dcscor:parameter>МаксимальноеКоличествоЗаписей</dcscor:parameter>
 			<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
+			<viewMode>Normal</viewMode>
 			<userSettingID>915a6337-36a8-4818-a21d-db9e01076319</userSettingID>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>Метаданные</dcscor:parameter>
+			<viewMode>Normal</viewMode>
+			<userSettingID>1b66f7af-882e-4ee1-8219-851401cb9179</userSettingID>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>Данные</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
+			<viewMode>Normal</viewMode>
+			<userSettingID>d8cf1930-790e-412a-8a96-1bd70d6439e6</userSettingID>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>Пользователь</dcscor:parameter>
+			<viewMode>Normal</viewMode>
+			<userSettingID>0cce7118-2b07-4170-83bc-544aeebea674</userSettingID>
 		</dcscor:item>
 	</dataParameters>
 	<order>
@@ -2656,6 +2745,7 @@
 			<left xsi:type="dcscor:Field">Уровень</left>
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">1</right>
+			<viewMode>Normal</viewMode>
 			<userSettingID>5fa16f86-31d4-40e6-b01c-975c6f04ce26</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
@@ -2663,6 +2753,7 @@
 			<left xsi:type="dcscor:Field">Событие</left>
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">_$Access$_.Access</right>
+			<viewMode>Normal</viewMode>
 			<userSettingID>3567a0f4-8a6f-46bc-99ae-2589e42c8980</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
@@ -2676,10 +2767,14 @@
 			<comparisonType>InList</comparisonType>
 			<right xsi:type="xs:string">Дата</right>
 			<right xsi:type="xs:string">ИмяПользователя</right>
+			<viewMode>Normal</viewMode>
+			<userSettingID>1fb89a31-ea0d-4478-8f63-eeb9cb1ede75</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<left xsi:type="dcscor:Field">ИмяПользователя</left>
 			<comparisonType>Filled</comparisonType>
+			<viewMode>Normal</viewMode>
+			<userSettingID>ea5e0bab-f831-4e3f-9712-6b2d2045eab8</userSettingID>
 		</item>
 	</filter>
 	<dataParameters>
@@ -2688,6 +2783,7 @@
 			<dcscor:value xsi:type="v8:StandardBeginningDate">
 				<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
 			</dcscor:value>
+			<viewMode>Normal</viewMode>
 			<userSettingID>0c37492c-c0cb-4378-90b4-53d7f8eaef32</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
@@ -2695,13 +2791,20 @@
 			<dcscor:value xsi:type="v8:StandardBeginningDate">
 				<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfNextDay</v8:variant>
 			</dcscor:value>
+			<viewMode>Normal</viewMode>
 			<userSettingID>4cb3046c-5d3a-4a29-ba77-4aeceb494b63</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:use>false</dcscor:use>
 			<dcscor:parameter>МаксимальноеКоличествоЗаписей</dcscor:parameter>
 			<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
+			<viewMode>Normal</viewMode>
 			<userSettingID>915a6337-36a8-4818-a21d-db9e01076319</userSettingID>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>Данные</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 		</dcscor:item>
 	</dataParameters>
 	<order>
@@ -2986,6 +3089,7 @@
 			<left xsi:type="dcscor:Field">Уровень</left>
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">1</right>
+			<viewMode>Normal</viewMode>
 			<userSettingID>5fa16f86-31d4-40e6-b01c-975c6f04ce26</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
@@ -2993,6 +3097,7 @@
 			<left xsi:type="dcscor:Field">Событие</left>
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">_$Access$_.Access</right>
+			<viewMode>Normal</viewMode>
 			<userSettingID>3567a0f4-8a6f-46bc-99ae-2589e42c8980</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
@@ -3000,16 +3105,22 @@
 			<left xsi:type="dcscor:Field">СтатусТранзакции</left>
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">1</right>
+			<viewMode>Normal</viewMode>
+			<userSettingID>9d92b3cb-4821-4481-ab2b-3dbe2e30541b</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<left xsi:type="dcscor:Field">ПараметрыДанных.ПоляЖурналаРегистрации</left>
 			<comparisonType>InList</comparisonType>
 			<right xsi:type="xs:string">Дата</right>
 			<right xsi:type="xs:string">ИмяПользователя</right>
+			<viewMode>Normal</viewMode>
+			<userSettingID>b54fb65f-be29-4b79-86da-37f4c7c92a4e</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<left xsi:type="dcscor:Field">ИмяПользователя</left>
 			<comparisonType>Filled</comparisonType>
+			<viewMode>Normal</viewMode>
+			<userSettingID>385772cc-624a-4633-9ce4-3b2b056db05d</userSettingID>
 		</item>
 	</filter>
 	<dataParameters>
@@ -3018,6 +3129,7 @@
 			<dcscor:value xsi:type="v8:StandardBeginningDate">
 				<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
 			</dcscor:value>
+			<viewMode>Normal</viewMode>
 			<userSettingID>0c37492c-c0cb-4378-90b4-53d7f8eaef32</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
@@ -3025,13 +3137,26 @@
 			<dcscor:value xsi:type="v8:StandardBeginningDate">
 				<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfNextDay</v8:variant>
 			</dcscor:value>
+			<viewMode>Normal</viewMode>
 			<userSettingID>4cb3046c-5d3a-4a29-ba77-4aeceb494b63</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:use>false</dcscor:use>
 			<dcscor:parameter>МаксимальноеКоличествоЗаписей</dcscor:parameter>
 			<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
+			<viewMode>Normal</viewMode>
 			<userSettingID>915a6337-36a8-4818-a21d-db9e01076319</userSettingID>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>Данные</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>Пользователь</dcscor:parameter>
+			<viewMode>Normal</viewMode>
+			<userSettingID>b54fd473-a942-4ed5-9ea4-c48f54e7f33c</userSettingID>
 		</dcscor:item>
 	</dataParameters>
 	<order>
@@ -3379,6 +3504,7 @@
 			<left xsi:type="dcscor:Field">Уровень</left>
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">1</right>
+			<viewMode>Normal</viewMode>
 			<userSettingID>5fa16f86-31d4-40e6-b01c-975c6f04ce26</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
@@ -3386,6 +3512,7 @@
 			<comparisonType>InList</comparisonType>
 			<right xsi:type="xs:string">_$Session$_.Start</right>
 			<right xsi:type="xs:string">_$Session$_.Finish</right>
+			<viewMode>Normal</viewMode>
 			<userSettingID>3567a0f4-8a6f-46bc-99ae-2589e42c8980</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
@@ -3393,6 +3520,8 @@
 			<left xsi:type="dcscor:Field">СтатусТранзакции</left>
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">1</right>
+			<viewMode>Normal</viewMode>
+			<userSettingID>df7db4bc-577b-4b1d-a08f-33442d0e6e28</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<left xsi:type="dcscor:Field">ПараметрыДанных.ПоляЖурналаРегистрации</left>
@@ -3401,39 +3530,50 @@
 			<right xsi:type="xs:string">ИмяПользователя</right>
 			<right xsi:type="xs:string">Сеанс</right>
 			<right xsi:type="xs:string">Событие</right>
+			<viewMode>Normal</viewMode>
+			<userSettingID>d8b690ab-1e9b-423d-9dd2-fc03b7c8ce58</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<left xsi:type="dcscor:Field">ИмяПользователя</left>
 			<comparisonType>Filled</comparisonType>
-		</item>
-		<item xsi:type="FilterItemComparison">
-			<left xsi:type="dcscor:Field">ПользовательскиеПоля.Поле28</left>
-			<comparisonType>Greater</comparisonType>
-			<right xsi:type="xs:decimal">0</right>
+			<viewMode>Normal</viewMode>
+			<userSettingID>28768b9c-274d-49e7-b66e-2704f82ab6cd</userSettingID>
 		</item>
 	</filter>
 	<dataParameters>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>НачалоПериода</dcscor:parameter>
 			<dcscor:value xsi:type="v8:StandardBeginningDate">
-				<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
-				<v8:date>2013-07-24T00:00:00</v8:date>
+				<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
 			</dcscor:value>
+			<viewMode>Normal</viewMode>
 			<userSettingID>0c37492c-c0cb-4378-90b4-53d7f8eaef32</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>КонецПериода</dcscor:parameter>
 			<dcscor:value xsi:type="v8:StandardBeginningDate">
-				<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
-				<v8:date>2013-07-24T23:59:59</v8:date>
+				<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfNextDay</v8:variant>
 			</dcscor:value>
+			<viewMode>Normal</viewMode>
 			<userSettingID>4cb3046c-5d3a-4a29-ba77-4aeceb494b63</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:use>false</dcscor:use>
 			<dcscor:parameter>МаксимальноеКоличествоЗаписей</dcscor:parameter>
 			<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
+			<viewMode>Normal</viewMode>
 			<userSettingID>915a6337-36a8-4818-a21d-db9e01076319</userSettingID>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>Данные</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>Пользователь</dcscor:parameter>
+			<viewMode>Normal</viewMode>
+			<userSettingID>8c715f7c-0cf3-4f8b-bdc0-ae30f241f2c8</userSettingID>
 		</dcscor:item>
 	</dataParameters>
 	<order>
@@ -3895,6 +4035,7 @@
 			<left xsi:type="dcscor:Field">Уровень</left>
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">1</right>
+			<viewMode>Normal</viewMode>
 			<userSettingID>5fa16f86-31d4-40e6-b01c-975c6f04ce26</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
@@ -3902,6 +4043,7 @@
 			<left xsi:type="dcscor:Field">Событие</left>
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">_$Access$_.Access</right>
+			<viewMode>Normal</viewMode>
 			<userSettingID>3567a0f4-8a6f-46bc-99ae-2589e42c8980</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
@@ -3909,39 +4051,64 @@
 			<left xsi:type="dcscor:Field">СтатусТранзакции</left>
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">1</right>
+			<viewMode>Normal</viewMode>
+			<userSettingID>f9a68c4b-4501-4828-b6cb-c67283711991</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<left xsi:type="dcscor:Field">ПараметрыДанных.ПоляЖурналаРегистрации</left>
 			<comparisonType>InList</comparisonType>
 			<right xsi:type="xs:string">Дата</right>
 			<right xsi:type="xs:string">Метаданные</right>
+			<viewMode>Normal</viewMode>
+			<userSettingID>0fbe2f78-624e-4030-9ad8-6bcef78db5e1</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<left xsi:type="dcscor:Field">Метаданные</left>
 			<comparisonType>Filled</comparisonType>
+			<viewMode>Normal</viewMode>
+			<userSettingID>d39f42c1-4962-4f52-ac13-bf69806dbf0d</userSettingID>
 		</item>
 	</filter>
 	<dataParameters>
 		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
 			<dcscor:parameter>НачалоПериода</dcscor:parameter>
 			<dcscor:value xsi:type="v8:StandardBeginningDate">
-				<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
-				<v8:date>0001-01-01T00:00:00</v8:date>
+				<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
 			</dcscor:value>
+			<viewMode>Normal</viewMode>
 			<userSettingID>0c37492c-c0cb-4378-90b4-53d7f8eaef32</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
 			<dcscor:parameter>КонецПериода</dcscor:parameter>
-			<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+			<dcscor:value xsi:type="v8:StandardBeginningDate">
+				<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfNextDay</v8:variant>
+			</dcscor:value>
+			<viewMode>Normal</viewMode>
 			<userSettingID>4cb3046c-5d3a-4a29-ba77-4aeceb494b63</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:use>false</dcscor:use>
 			<dcscor:parameter>МаксимальноеКоличествоЗаписей</dcscor:parameter>
 			<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
+			<viewMode>Normal</viewMode>
 			<userSettingID>915a6337-36a8-4818-a21d-db9e01076319</userSettingID>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>Метаданные</dcscor:parameter>
+			<viewMode>Normal</viewMode>
+			<userSettingID>2f8b2204-90ac-4149-83a1-9746540d7990</userSettingID>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>Данные</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>Пользователь</dcscor:parameter>
+			<viewMode>Normal</viewMode>
+			<userSettingID>2996575c-a311-447b-81c3-0b58a2423924</userSettingID>
 		</dcscor:item>
 	</dataParameters>
 	<order>
@@ -4375,16 +4542,16 @@
 			<left xsi:type="dcscor:Field">Уровень</left>
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">2</right>
+			<viewMode>Normal</viewMode>
 			<userSettingID>5fa16f86-31d4-40e6-b01c-975c6f04ce26</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<left xsi:type="dcscor:Field">Событие</left>
 			<comparisonType>InList</comparisonType>
 			<right xsi:type="xs:string">_$InfoBase$_.TARImportant</right>
-			<right xsi:type="xs:string">_$Access$_.AccessDenied</right>
 			<right xsi:type="xs:string">_$Job$_.Fail</right>
 			<right xsi:type="xs:string">_$PerformError$_</right>
-			<right xsi:type="xs:string">_$Session$_.AuthenticationError</right>
+			<viewMode>Normal</viewMode>
 			<userSettingID>3567a0f4-8a6f-46bc-99ae-2589e42c8980</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
@@ -4392,6 +4559,8 @@
 			<left xsi:type="dcscor:Field">СтатусТранзакции</left>
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">1</right>
+			<viewMode>Normal</viewMode>
+			<userSettingID>dc0f51bf-c23e-4cee-bfab-5744609afcc0</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<left xsi:type="dcscor:Field">ПараметрыДанных.ПоляЖурналаРегистрации</left>
@@ -4411,6 +4580,8 @@
 			<right xsi:type="xs:string">ПредставлениеМетаданных</right>
 			<right xsi:type="xs:string">СтатусТранзакции</right>
 			<right xsi:type="xs:string">Транзакция</right>
+			<viewMode>Normal</viewMode>
+			<userSettingID>55aa1617-65c9-4a9d-a8db-9eb34c6a149f</userSettingID>
 		</item>
 	</filter>
 	<dataParameters>
@@ -4419,6 +4590,7 @@
 			<dcscor:value xsi:type="v8:StandardBeginningDate">
 				<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
 			</dcscor:value>
+			<viewMode>Normal</viewMode>
 			<userSettingID>0c37492c-c0cb-4378-90b4-53d7f8eaef32</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
@@ -4426,13 +4598,26 @@
 			<dcscor:value xsi:type="v8:StandardBeginningDate">
 				<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfNextDay</v8:variant>
 			</dcscor:value>
+			<viewMode>Normal</viewMode>
 			<userSettingID>4cb3046c-5d3a-4a29-ba77-4aeceb494b63</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:use>false</dcscor:use>
 			<dcscor:parameter>МаксимальноеКоличествоЗаписей</dcscor:parameter>
 			<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
+			<viewMode>Normal</viewMode>
 			<userSettingID>915a6337-36a8-4818-a21d-db9e01076319</userSettingID>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>Данные</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>Пользователь</dcscor:parameter>
+			<viewMode>Normal</viewMode>
+			<userSettingID>1fda343c-c0f5-4ca6-827a-dcc13bd05c97</userSettingID>
 		</dcscor:item>
 	</dataParameters>
 	<order>
@@ -4868,6 +5053,7 @@
 			<left xsi:type="dcscor:Field">Уровень</left>
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">1</right>
+			<viewMode>Normal</viewMode>
 			<userSettingID>5fa16f86-31d4-40e6-b01c-975c6f04ce26</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
@@ -4875,6 +5061,7 @@
 			<comparisonType>InList</comparisonType>
 			<right xsi:type="xs:string">_$Access$_.AccessDenied</right>
 			<right xsi:type="xs:string">_$Session$_.AuthenticationError</right>
+			<viewMode>Normal</viewMode>
 			<userSettingID>3567a0f4-8a6f-46bc-99ae-2589e42c8980</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
@@ -4882,6 +5069,7 @@
 			<left xsi:type="dcscor:Field">СтатусТранзакции</left>
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">1</right>
+			<viewMode>Normal</viewMode>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<left xsi:type="dcscor:Field">ПараметрыДанных.ПоляЖурналаРегистрации</left>
@@ -4898,6 +5086,7 @@
 			<right xsi:type="xs:string">ПредставлениеДанных</right>
 			<right xsi:type="xs:string">Сеанс</right>
 			<right xsi:type="xs:string">Соединение</right>
+			<viewMode>Normal</viewMode>
 		</item>
 	</filter>
 	<dataParameters>
@@ -4906,6 +5095,7 @@
 			<dcscor:value xsi:type="v8:StandardBeginningDate">
 				<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
 			</dcscor:value>
+			<viewMode>Normal</viewMode>
 			<userSettingID>0c37492c-c0cb-4378-90b4-53d7f8eaef32</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
@@ -4913,13 +5103,26 @@
 			<dcscor:value xsi:type="v8:StandardBeginningDate">
 				<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfNextDay</v8:variant>
 			</dcscor:value>
+			<viewMode>Normal</viewMode>
 			<userSettingID>4cb3046c-5d3a-4a29-ba77-4aeceb494b63</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:use>false</dcscor:use>
 			<dcscor:parameter>МаксимальноеКоличествоЗаписей</dcscor:parameter>
 			<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
+			<viewMode>Normal</viewMode>
 			<userSettingID>915a6337-36a8-4818-a21d-db9e01076319</userSettingID>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>Данные</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>Пользователь</dcscor:parameter>
+			<viewMode>Normal</viewMode>
+			<userSettingID>19c1f698-ed0d-4abd-a4e4-04a9b62da7a7</userSettingID>
 		</dcscor:item>
 	</dataParameters>
 	<order>
@@ -5217,6 +5420,7 @@
 			<left xsi:type="dcscor:Field">Уровень</left>
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">1</right>
+			<viewMode>Normal</viewMode>
 			<userSettingID>5fa16f86-31d4-40e6-b01c-975c6f04ce26</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
@@ -5225,6 +5429,7 @@
 			<right xsi:type="xs:string">_$Transaction$_.Begin</right>
 			<right xsi:type="xs:string">_$Transaction$_.Commit</right>
 			<right xsi:type="xs:string">_$Transaction$_.Rollback</right>
+			<viewMode>Normal</viewMode>
 			<userSettingID>3567a0f4-8a6f-46bc-99ae-2589e42c8980</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
@@ -5232,6 +5437,7 @@
 			<comparisonType>InList</comparisonType>
 			<right xsi:type="xs:string">1</right>
 			<right xsi:type="xs:string">4</right>
+			<viewMode>Normal</viewMode>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<left xsi:type="dcscor:Field">ПараметрыДанных.ПоляЖурналаРегистрации</left>
@@ -5240,6 +5446,8 @@
 			<right xsi:type="xs:string">Дата</right>
 			<right xsi:type="xs:string">СтатусТранзакции</right>
 			<right xsi:type="xs:string">Транзакция</right>
+			<viewMode>Normal</viewMode>
+			<userSettingID>ba3f9525-308c-46a0-b84c-0c88e785d744</userSettingID>
 		</item>
 	</filter>
 	<dataParameters>
@@ -5248,6 +5456,7 @@
 			<dcscor:value xsi:type="v8:StandardBeginningDate">
 				<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
 			</dcscor:value>
+			<viewMode>Normal</viewMode>
 			<userSettingID>0c37492c-c0cb-4378-90b4-53d7f8eaef32</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
@@ -5255,13 +5464,32 @@
 			<dcscor:value xsi:type="v8:StandardBeginningDate">
 				<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfNextDay</v8:variant>
 			</dcscor:value>
+			<viewMode>Normal</viewMode>
 			<userSettingID>4cb3046c-5d3a-4a29-ba77-4aeceb494b63</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:use>false</dcscor:use>
 			<dcscor:parameter>МаксимальноеКоличествоЗаписей</dcscor:parameter>
 			<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
+			<viewMode>Normal</viewMode>
 			<userSettingID>915a6337-36a8-4818-a21d-db9e01076319</userSettingID>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>Метаданные</dcscor:parameter>
+			<viewMode>Normal</viewMode>
+			<userSettingID>20ef66d6-6457-4e8d-b6dd-05b33d4008f6</userSettingID>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>Данные</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>Пользователь</dcscor:parameter>
+			<viewMode>Normal</viewMode>
+			<userSettingID>47a22a32-4e52-4e51-83a9-420b4bb09bdb</userSettingID>
 		</dcscor:item>
 	</dataParameters>
 	<order>
