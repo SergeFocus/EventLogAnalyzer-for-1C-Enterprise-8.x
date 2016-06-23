@@ -23,42 +23,6 @@
 						<AllowedLength>Variable</AllowedLength>
 					</StringQualifiers>
 				</valueType>
-				<availableValue>
-					<value xsi:type="xs:string">1</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Информация</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">2</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Ошибка</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">3</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Предупреждение</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">4</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Примечание</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Дата</dataPath>
@@ -69,9 +33,6 @@
 						<d5p1:content>Дата</d5p1:content>
 					</d5p1:item>
 				</title>
-				<useRestriction>
-					<condition>true</condition>
-				</useRestriction>
 				<valueType>
 					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
 					<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
@@ -88,9 +49,6 @@
 						<d5p1:content>Пользователь</d5p1:content>
 					</d5p1:item>
 				</title>
-				<useRestriction>
-					<condition>true</condition>
-				</useRestriction>
 				<valueType>
 					<Type xmlns="http://v8.1c.ru/8.1/data/core">UUID</Type>
 				</valueType>
@@ -104,9 +62,6 @@
 						<d5p1:content>Компьютер</d5p1:content>
 					</d5p1:item>
 				</title>
-				<useRestriction>
-					<condition>true</condition>
-				</useRestriction>
 				<valueType>
 					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
 					<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
@@ -124,9 +79,6 @@
 						<d5p1:content>Имя приложения</d5p1:content>
 					</d5p1:item>
 				</title>
-				<useRestriction>
-					<condition>true</condition>
-				</useRestriction>
 				<valueType>
 					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
 					<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
@@ -144,6 +96,61 @@
 						<d5p1:content>Событие</d5p1:content>
 					</d5p1:item>
 				</title>
+				<presentationExpression>Выбор 
+	Когда Событие = "_$Access$_.Access" Тогда "Доступ. Доступ"
+	Когда Событие = "_$Access$_.AccessDenied" Тогда "Данные. Удаление"
+	Когда Событие = "_$Data$_.Delete" Тогда "Доступ. Доступ"
+	Когда Событие = "_$Data$_.New" Тогда "Данные. Добавление"
+	Когда Событие = "_$Data$_.Post" Тогда "Данные. Проведение"
+	Когда Событие = "_$Data$_.TotalsMaxPeriodUpdate" Тогда "Данные. Изменение максимального периода рассчитанных итогов"
+	Когда Событие = "_$Data$_.TotalsMinPeriodUpdate" Тогда "Данные. Изменение минимального периода рассчитанных итогов"
+	Когда Событие = "_$Data$_.Unpost" Тогда "Данные. Отмена проведения"
+	Когда Событие = "_$Data$_.Update" Тогда "Данные. Изменение"
+	Когда Событие = "_$Data$_.SetStandardODataInterfaceContent" Тогда "Данные. Изменение состава стандартного интерфейса OData"
+	Когда Событие = "_$InfoBase$_.ConfigExtensionUpdate" Тогда "Информационная база. Изменение конфигурации"
+	Когда Событие = "_$InfoBase$_.ConfigUpdate" Тогда "Информационная база. Изменение конфигурации базы данных"
+	Когда Событие = "_$InfoBase$_.DBConfigBackgroundUpdateStart" Тогда "Информационная база. Запуск фонового обновления"
+	Когда Событие = "_$InfoBase$_.DBConfigBackgroundUpdateFinish" Тогда "Информационная база. Завершение фонового обновления"
+	Когда Событие = "_$InfoBase$_.DBConfigBackgroundUpdateCancel" Тогда "Информационная база. Отмена фонового обновления"
+	Когда Событие = "_$InfoBase$_.DBConfigBackgroundUpdateSuspend" Тогда "Информационная база. Приостановка (пауза) процесса фонового обновления"
+	Когда Событие = "_$InfoBase$_.DBConfigBackgroundUpdateResume" Тогда "Информационная база. Продолжение (после приостановки) процесса фонового обновления"
+	Когда Событие = "_$InfoBase$_.DBConfigExtensionUpdate" Тогда "Информационная база. Изменение расширения конфигурации базы данных"
+	Когда Событие = "_$InfoBase$_.EventLogSettingsUpdate" Тогда "Доступ. Доступ"
+	Когда Событие = "_$Access$_.Access" Тогда "Информационная база. Изменение параметров журнала регистрации"
+	Когда Событие = "_$InfoBase$_.InfoBaseAdmParamsUpdate" Тогда "Информационная база. Изменение параметров информационной базы"
+	Когда Событие = "_$InfoBase$_.MasterNodeUpdate" Тогда "Информационная база. Изменение главного узла"
+	Когда Событие = "_$InfoBase$_.RegionalSettingsUpdate" Тогда "Информационная база. Изменение региональных установок"
+	Когда Событие = "_$InfoBase$_.EraseData" Тогда "Информационная база. Удаление данных информационной баз"
+	Когда Событие = "_$InfoBase$_.TARImportant" Тогда "Информационная база. Удаление данных информационной баз"
+	Когда Событие = "_$InfoBase$_.TARImportant" Тогда "Тестирование и исправление. Ошибка"
+	Когда Событие = "_$InfoBase$_.TARInfo" Тогда "Тестирование и исправление. Сообщение"
+
+	Когда Событие = "_$InfoBase$_.TARMess" Тогда "Тестирование и исправление. Предупреждение"
+	Когда Событие = "_$Job$_.Cancel" Тогда "Фоновое задание. Отмена"
+	Когда Событие = "_$Job$_.Fail" Тогда "Фоновое задание. Ошибка выполнения"
+	Когда Событие = "_$Job$_.Terminate" Тогда "Фоновое задание. Принудительное завершение"
+	Когда Событие = "_$Job$_.Start" Тогда "Фоновое задание. Запуск"
+	Когда Событие = "_$Job$_.Succeed" Тогда "Фоновое задание. Успешное завершение"
+	Когда Событие = "_$PerformError$_" Тогда "Ошибка выполнения"
+	Когда Событие = "_$Session$_.Authentication" Тогда "Сеанс. Аутентификация"
+	Когда Событие = "_$Session$_.AuthenticationError" Тогда "Сеанс. Ошибка аутентификации"
+	Когда Событие = "_$Session$_.ConfigExtensionApplyError" Тогда "Сеанс. Ошибка применения расширения конфигурации"
+
+	Когда Событие = "_$Session$_.Finish" Тогда "Сеанс. Завершение"
+	Когда Событие = "_$Session$_.Start" Тогда "Сеанс. Начало"
+	Когда Событие = "_$Transaction$_.Begin" Тогда "Транзакция. Начало"
+	Когда Событие = "_$Transaction$_.Commit" Тогда "Транзакция. Фиксация"
+	Когда Событие = "_$Transaction$_.Rollback" Тогда "Транзакция. Отмена"
+	Когда Событие = "_$User$_.Delete" Тогда "Пользователи. Удаление"
+	Когда Событие = "_$User$_.New" Тогда "Пользователи. Добавление"
+	Когда Событие = "_$User$_.Update" Тогда "Пользователи. Изменение"
+	Когда Событие = "_$OpenIDProvider$_.PositiveAssertion" Тогда "Провайдер OpenID. Подтверждено"
+	Когда Событие = "_$OpenIDProvider$_.NegativeAssertion" Тогда "Провайдер OpenID. Отклонено"
+Иначе 
+	Событие 
+Конец
+
+</presentationExpression>
 				<valueType>
 					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
 					<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
@@ -151,294 +158,6 @@
 						<AllowedLength>Variable</AllowedLength>
 					</StringQualifiers>
 				</valueType>
-				<availableValue>
-					<value xsi:type="xs:string">_$Access$_.Access</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Доступ.Доступ</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">_$Access$_.AccessDenied</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Доступ.Отказ в доступе</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">_$Data$_.Delete</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Данные.Удаление</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">_$Data$_.New</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Данные.Добавление</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">_$Data$_.Post</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Данные.Проведение</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">_$Data$_.TotalsPeriodUpdate</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Данные.Изменение периода расчитанных итогов</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">_$Data$_.Unpost</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Данные.Отмена проведения</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">_$Data$_.Update</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Данные.Изменение</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">_$InfoBase$_.ConfigUpdate</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Информационная база.Изменение конфигурации</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">_$InfoBase$_.DBConfigUpdate</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Информационная база.Изменение конфигурации базы</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">_$InfoBase$_.EventLogSettingsUpdate</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Информационная база.Изменение параметров журнала регистрации</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">_$InfoBase$_.InfoBaseAdmParamsUpdate</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Информационная база.Изменение параметров информационной базы</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">_$InfoBase$_.MasterNodeUpdate</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Информационная база.Изменение главного узла</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">_$InfoBase$_.RegionalSettingsUpdate</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Информационная база.Изменение региональных установок</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">_$InfoBase$_.TARImportant</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Тестирование и исправление.Ошибка</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">_$InfoBase$_.TARInfo</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Тестирование и исправление. Сообщение</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">_$InfoBase$_.TARMess</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Тестирование и исправление. Предупреждение</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">_$Job$_.Cancel</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Фоновое задание. Отмена</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">_$Job$_.Fail</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Фоновое задание. Ошибка выполнения</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">_$Job$_.Start</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Фоновое задание. Запуск</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">_$Job$_.Succeed</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Фоновое задание. Успешное завершение</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">_$PerformError$_</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Ошибка выполнения</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">_$Session$_.Authentication</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Сеанс. Аутентификация</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">_$Session$_.AuthenticationError</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Сеанс. Ошибка аутентификации</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">_$Session$_.Finish</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Сеанс. Завершение</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">_$Session$_.Start</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Сеанс. Начало</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">_$Transaction$_.Begin</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Транзакция. Начало</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">_$Transaction$_.Commit</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Транзакция. Фиксация</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">_$Transaction$_.Rollback</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Транзакция. Отмена</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">_$User$_.Delete</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Пользователи. Удаление</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">_$User$_.New</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Пользователи. Добавление</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">_$User$_.Update</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Пользователи. Изменение</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Комментарий</dataPath>
@@ -449,9 +168,6 @@
 						<d5p1:content>Комментарий</d5p1:content>
 					</d5p1:item>
 				</title>
-				<useRestriction>
-					<condition>true</condition>
-				</useRestriction>
 				<valueType>
 					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
 					<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
@@ -489,6 +205,12 @@
 				<valueType>
 					<TypeSet xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:AnyRef</TypeSet>
 				</valueType>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>МинимальнаяШирина</parameter>
+						<value xsi:type="xs:decimal">30</value>
+					</item>
+				</appearance>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ПредставлениеДанных</dataPath>
@@ -499,9 +221,6 @@
 						<d5p1:content>Представление данных</d5p1:content>
 					</d5p1:item>
 				</title>
-				<useRestriction>
-					<condition>true</condition>
-				</useRestriction>
 				<valueType>
 					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
 					<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
@@ -594,42 +313,6 @@
 						<AllowedLength>Variable</AllowedLength>
 					</StringQualifiers>
 				</valueType>
-				<availableValue>
-					<value xsi:type="xs:string">1</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Зафиксирована</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">2</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Не завершена</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">3</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Нет транзакции</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">4</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Отменена</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Транзакция</dataPath>
@@ -640,9 +323,6 @@
 						<d5p1:content>Транзакция</d5p1:content>
 					</d5p1:item>
 				</title>
-				<useRestriction>
-					<condition>true</condition>
-				</useRestriction>
 				<valueType>
 					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
 					<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
@@ -660,9 +340,6 @@
 						<d5p1:content>Сеанс</d5p1:content>
 					</d5p1:item>
 				</title>
-				<useRestriction>
-					<condition>true</condition>
-				</useRestriction>
 				<valueType>
 					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
 					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
@@ -699,9 +376,6 @@
 						<d5p1:content>Рабочий сервер</d5p1:content>
 					</d5p1:item>
 				</title>
-				<useRestriction>
-					<condition>true</condition>
-				</useRestriction>
 				<valueType>
 					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
 					<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
@@ -716,12 +390,9 @@
 				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
 					<d5p1:item>
 						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>Основной IPПорт</d5p1:content>
+						<d5p1:content>Основной IP порт</d5p1:content>
 					</d5p1:item>
 				</title>
-				<useRestriction>
-					<condition>true</condition>
-				</useRestriction>
 				<valueType>
 					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
 					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
@@ -737,12 +408,9 @@
 				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
 					<d5p1:item>
 						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>Вспомогательный IPПорт</d5p1:content>
+						<d5p1:content>Вспомогательный IP порт</d5p1:content>
 					</d5p1:item>
 				</title>
-				<useRestriction>
-					<condition>true</condition>
-				</useRestriction>
 				<valueType>
 					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
 					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
@@ -755,518 +423,59 @@
 			<dataSource>ИсточникДанных1</dataSource>
 			<objectName>ТабЖур</objectName>
 		</dataSet>
-		<parameter>
-			<name>НачалоПериода</name>
-			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
-				<d4p1:item>
-					<d4p1:lang>ru</d4p1:lang>
-					<d4p1:content>Начало периода</d4p1:content>
-				</d4p1:item>
-			</title>
-			<valueType>
-				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
-				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
-					<DateFractions>DateTime</DateFractions>
-				</DateQualifiers>
-			</valueType>
-			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
-			<useRestriction>false</useRestriction>
-			<use>Always</use>
-		</parameter>
-		<parameter>
-			<name>КонецПериода</name>
-			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
-				<d4p1:item>
-					<d4p1:lang>ru</d4p1:lang>
-					<d4p1:content>Конец периода</d4p1:content>
-				</d4p1:item>
-			</title>
-			<valueType>
-				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
-				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
-					<DateFractions>DateTime</DateFractions>
-				</DateQualifiers>
-			</valueType>
-			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
-			<useRestriction>false</useRestriction>
-			<use>Always</use>
-		</parameter>
-		<parameter>
-			<name>МаксимальноеКоличествоЗаписей</name>
-			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
-				<d4p1:item>
-					<d4p1:lang>ru</d4p1:lang>
-					<d4p1:content>Максимальное количество записей</d4p1:content>
-				</d4p1:item>
-			</title>
-			<valueType>
-				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
-				<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
-					<Digits>0</Digits>
-					<FractionDigits>0</FractionDigits>
-					<AllowedSign>Any</AllowedSign>
-				</NumberQualifiers>
-			</valueType>
-			<value xsi:type="xs:decimal">0</value>
-			<useRestriction>false</useRestriction>
-			<use>Always</use>
-		</parameter>
-		<parameter>
-			<name>Метаданные</name>
-			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
-				<d4p1:item>
-					<d4p1:lang>ru</d4p1:lang>
-					<d4p1:content>Метаданные</d4p1:content>
-				</d4p1:item>
-			</title>
-			<valueType>
-				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
-				<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
-					<Length>0</Length>
-					<AllowedLength>Variable</AllowedLength>
-				</StringQualifiers>
-			</valueType>
-			<useRestriction>false</useRestriction>
-			<valueListAllowed>true</valueListAllowed>
-		</parameter>
-		<parameter>
-			<name>Данные</name>
-			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
-				<d4p1:item>
-					<d4p1:lang>ru</d4p1:lang>
-					<d4p1:content>Данные</d4p1:content>
-				</d4p1:item>
-			</title>
-			<valueType>
-				<Type xmlns="http://v8.1c.ru/8.1/data/core">UUID</Type>
-				<TypeSet xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:ExchangePlanRef</TypeSet>
-				<TypeSet xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:BusinessProcessRoutePointRef</TypeSet>
-				<TypeSet xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:BusinessProcessRef</TypeSet>
-				<TypeSet xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:AnyRef</TypeSet>
-				<TypeSet xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef</TypeSet>
-				<TypeSet xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:EnumRef</TypeSet>
-				<TypeSet xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:ChartOfCalculationTypesRef</TypeSet>
-				<TypeSet xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:TaskRef</TypeSet>
-				<TypeSet xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:ChartOfCharacteristicTypesRef</TypeSet>
-				<TypeSet xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:ChartOfAccountsRef</TypeSet>
-				<TypeSet xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef</TypeSet>
-			</valueType>
-			<value xsi:nil="true"/>
-			<useRestriction>false</useRestriction>
-		</parameter>
-		<parameter>
-			<name>ПредставлениеДанных</name>
-			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
-				<d4p1:item>
-					<d4p1:lang>ru</d4p1:lang>
-					<d4p1:content>Представление данных</d4p1:content>
-				</d4p1:item>
-			</title>
-			<valueType>
-				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
-				<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
-					<Length>0</Length>
-					<AllowedLength>Variable</AllowedLength>
-				</StringQualifiers>
-			</valueType>
-			<value xsi:type="xs:string"/>
-			<useRestriction>false</useRestriction>
-		</parameter>
-		<parameter>
-			<name>Комментарий</name>
-			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
-				<d4p1:item>
-					<d4p1:lang>ru</d4p1:lang>
-					<d4p1:content>Комментарий</d4p1:content>
-				</d4p1:item>
-			</title>
-			<valueType>
-				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
-				<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
-					<Length>0</Length>
-					<AllowedLength>Variable</AllowedLength>
-				</StringQualifiers>
-			</valueType>
-			<value xsi:type="xs:string"/>
-			<useRestriction>false</useRestriction>
-		</parameter>
-		<parameter>
-			<name>ИмяПриложения</name>
-			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
-				<d4p1:item>
-					<d4p1:lang>ru</d4p1:lang>
-					<d4p1:content>Имя приложения</d4p1:content>
-				</d4p1:item>
-			</title>
-			<valueType>
-				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
-				<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
-					<Length>0</Length>
-					<AllowedLength>Variable</AllowedLength>
-				</StringQualifiers>
-			</valueType>
-			<useRestriction>false</useRestriction>
-			<valueListAllowed>true</valueListAllowed>
-		</parameter>
-		<parameter>
-			<name>Компьютер</name>
-			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
-				<d4p1:item>
-					<d4p1:lang>ru</d4p1:lang>
-					<d4p1:content>Компьютер</d4p1:content>
-				</d4p1:item>
-			</title>
-			<valueType>
-				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
-				<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
-					<Length>0</Length>
-					<AllowedLength>Variable</AllowedLength>
-				</StringQualifiers>
-			</valueType>
-			<useRestriction>false</useRestriction>
-			<valueListAllowed>true</valueListAllowed>
-		</parameter>
-		<parameter>
-			<name>Транзакция</name>
-			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
-				<d4p1:item>
-					<d4p1:lang>ru</d4p1:lang>
-					<d4p1:content>Транзакция</d4p1:content>
-				</d4p1:item>
-			</title>
-			<valueType>
-				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
-				<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
-					<Length>0</Length>
-					<AllowedLength>Variable</AllowedLength>
-				</StringQualifiers>
-			</valueType>
-			<value xsi:type="xs:string"/>
-			<useRestriction>false</useRestriction>
-		</parameter>
-		<parameter>
-			<name>Сеанс</name>
-			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
-				<d4p1:item>
-					<d4p1:lang>ru</d4p1:lang>
-					<d4p1:content>Сеанс</d4p1:content>
-				</d4p1:item>
-			</title>
-			<valueType>
-				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
-				<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
-					<Digits>0</Digits>
-					<FractionDigits>0</FractionDigits>
-					<AllowedSign>Any</AllowedSign>
-				</NumberQualifiers>
-			</valueType>
-			<useRestriction>false</useRestriction>
-			<valueListAllowed>true</valueListAllowed>
-		</parameter>
-		<parameter>
-			<name>РабочийСервер</name>
-			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
-				<d4p1:item>
-					<d4p1:lang>ru</d4p1:lang>
-					<d4p1:content>Рабочий сервер</d4p1:content>
-				</d4p1:item>
-			</title>
-			<valueType>
-				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
-				<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
-					<Length>0</Length>
-					<AllowedLength>Variable</AllowedLength>
-				</StringQualifiers>
-			</valueType>
-			<useRestriction>false</useRestriction>
-			<valueListAllowed>true</valueListAllowed>
-		</parameter>
-		<parameter>
-			<name>ОсновнойIPПорт</name>
-			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
-				<d4p1:item>
-					<d4p1:lang>ru</d4p1:lang>
-					<d4p1:content>Основной IP порт</d4p1:content>
-				</d4p1:item>
-			</title>
-			<valueType>
-				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
-				<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
-					<Digits>0</Digits>
-					<FractionDigits>0</FractionDigits>
-					<AllowedSign>Any</AllowedSign>
-				</NumberQualifiers>
-			</valueType>
-			<useRestriction>false</useRestriction>
-			<valueListAllowed>true</valueListAllowed>
-		</parameter>
-		<parameter>
-			<name>ВспомогательныйIPПорт</name>
-			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
-				<d4p1:item>
-					<d4p1:lang>ru</d4p1:lang>
-					<d4p1:content>Вспомогательный IP порт</d4p1:content>
-				</d4p1:item>
-			</title>
-			<valueType>
-				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
-				<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
-					<Digits>0</Digits>
-					<FractionDigits>0</FractionDigits>
-					<AllowedSign>Any</AllowedSign>
-				</NumberQualifiers>
-			</valueType>
-			<useRestriction>false</useRestriction>
-			<valueListAllowed>true</valueListAllowed>
-		</parameter>
-		<parameter>
-			<name>ПоляЖурналаРегистрации</name>
-			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
-				<d4p1:item>
-					<d4p1:lang>ru</d4p1:lang>
-					<d4p1:content>Поля журнала регистрации</d4p1:content>
-				</d4p1:item>
-			</title>
-			<valueType>
-				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
-				<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
-					<Length>0</Length>
-					<AllowedLength>Variable</AllowedLength>
-				</StringQualifiers>
-			</valueType>
-			<value xsi:type="xs:string">Уровень</value>
-			<value xsi:type="xs:string">Дата</value>
-			<value xsi:type="xs:string">Пользователь</value>
-			<value xsi:type="xs:string">Компьютер</value>
-			<value xsi:type="xs:string">ИмяПриложения</value>
-			<value xsi:type="xs:string">Событие</value>
-			<value xsi:type="xs:string">Комментарий</value>
-			<value xsi:type="xs:string">Метаданные</value>
-			<value xsi:type="xs:string">Данные</value>
-			<value xsi:type="xs:string">ПредставлениеДанных</value>
-			<value xsi:type="xs:string">ИмяПользователя</value>
-			<value xsi:type="xs:string">ПредставлениеПриложения</value>
-			<value xsi:type="xs:string">ПредставлениеСобытия</value>
-			<value xsi:type="xs:string">ПредставлениеМетаданных</value>
-			<value xsi:type="xs:string">СтатусТранзакции</value>
-			<value xsi:type="xs:string">Транзакция</value>
-			<value xsi:type="xs:string">Сеанс</value>
-			<value xsi:type="xs:string">Соединение</value>
-			<value xsi:type="xs:string">РабочийСервер</value>
-			<value xsi:type="xs:string">ОсновнойIPПорт</value>
-			<value xsi:type="xs:string">ВспомогательныйIPПорт</value>
-			<value xsi:type="xs:string">РазделениеДанныхСеанса</value>
-			<value xsi:type="xs:string">ПредставлениеРазделенияДанныхСеанса</value>
-			<useRestriction>true</useRestriction>
-			<availableValue>
-				<value xsi:type="xs:string">Уровень</value>
-				<presentation xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+		<dataSet xsi:type="DataSetObject">
+			<name>ПользователиИнформационнойБазы</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПользовательИнформационнойБазы.Имя</dataPath>
+				<field>Имя</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
 					<d5p1:item>
 						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>Уровень</d5p1:content>
+						<d5p1:content>Пользователь информационной базы.Имя</d5p1:content>
 					</d5p1:item>
-				</presentation>
-			</availableValue>
-			<availableValue>
-				<value xsi:type="xs:string">Дата</value>
-				<presentation xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПользовательИнформационнойБазы.ПолноеИмя</dataPath>
+				<field>ПолноеИмя</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
 					<d5p1:item>
 						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>Дата</d5p1:content>
+						<d5p1:content>Пользователь информационной базы.Полное имя</d5p1:content>
 					</d5p1:item>
-				</presentation>
-			</availableValue>
-			<availableValue>
-				<value xsi:type="xs:string">Пользователь</value>
-				<presentation xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПользовательИнформационнойБазы.УникальныйИдентификатор</dataPath>
+				<field>УникальныйИдентификатор</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
 					<d5p1:item>
 						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>Пользователь</d5p1:content>
+						<d5p1:content>Пользователь информационной базы.Уникальный идентификатор</d5p1:content>
 					</d5p1:item>
-				</presentation>
-			</availableValue>
-			<availableValue>
-				<value xsi:type="xs:string">Компьютер</value>
-				<presentation xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">UUID</Type>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldFolder">
+				<dataPath>ПользовательИнформационнойБазы</dataPath>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
 					<d5p1:item>
 						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>Компьютер</d5p1:content>
+						<d5p1:content>Пользователь информационной базы</d5p1:content>
 					</d5p1:item>
-				</presentation>
-			</availableValue>
-			<availableValue>
-				<value xsi:type="xs:string">ИмяПриложения</value>
-				<presentation xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
-					<d5p1:item>
-						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>ИмяПриложения</d5p1:content>
-					</d5p1:item>
-				</presentation>
-			</availableValue>
-			<availableValue>
-				<value xsi:type="xs:string">Событие</value>
-				<presentation xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
-					<d5p1:item>
-						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>Событие</d5p1:content>
-					</d5p1:item>
-				</presentation>
-			</availableValue>
-			<availableValue>
-				<value xsi:type="xs:string">Комментарий</value>
-				<presentation xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
-					<d5p1:item>
-						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>Комментарий</d5p1:content>
-					</d5p1:item>
-				</presentation>
-			</availableValue>
-			<availableValue>
-				<value xsi:type="xs:string">Метаданные</value>
-				<presentation xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
-					<d5p1:item>
-						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>Метаданные</d5p1:content>
-					</d5p1:item>
-				</presentation>
-			</availableValue>
-			<availableValue>
-				<value xsi:type="xs:string">Данные</value>
-				<presentation xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
-					<d5p1:item>
-						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>Данные</d5p1:content>
-					</d5p1:item>
-				</presentation>
-			</availableValue>
-			<availableValue>
-				<value xsi:type="xs:string">ПредставлениеДанных</value>
-				<presentation xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
-					<d5p1:item>
-						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>ПредставлениеДанных</d5p1:content>
-					</d5p1:item>
-				</presentation>
-			</availableValue>
-			<availableValue>
-				<value xsi:type="xs:string">ИмяПользователя</value>
-				<presentation xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
-					<d5p1:item>
-						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>ИмяПользователя</d5p1:content>
-					</d5p1:item>
-				</presentation>
-			</availableValue>
-			<availableValue>
-				<value xsi:type="xs:string">ПредставлениеПриложения</value>
-				<presentation xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
-					<d5p1:item>
-						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>ПредставлениеПриложения</d5p1:content>
-					</d5p1:item>
-				</presentation>
-			</availableValue>
-			<availableValue>
-				<value xsi:type="xs:string">ПредставлениеСобытия</value>
-				<presentation xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
-					<d5p1:item>
-						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>ПредставлениеСобытия</d5p1:content>
-					</d5p1:item>
-				</presentation>
-			</availableValue>
-			<availableValue>
-				<value xsi:type="xs:string">ПредставлениеМетаданных</value>
-				<presentation xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
-					<d5p1:item>
-						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>ПредставлениеМетаданных</d5p1:content>
-					</d5p1:item>
-				</presentation>
-			</availableValue>
-			<availableValue>
-				<value xsi:type="xs:string">СтатусТранзакции</value>
-				<presentation xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
-					<d5p1:item>
-						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>СтатусТранзакции</d5p1:content>
-					</d5p1:item>
-				</presentation>
-			</availableValue>
-			<availableValue>
-				<value xsi:type="xs:string">Транзакция</value>
-				<presentation xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
-					<d5p1:item>
-						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>Транзакция</d5p1:content>
-					</d5p1:item>
-				</presentation>
-			</availableValue>
-			<availableValue>
-				<value xsi:type="xs:string">Сеанс</value>
-				<presentation xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
-					<d5p1:item>
-						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>Сеанс</d5p1:content>
-					</d5p1:item>
-				</presentation>
-			</availableValue>
-			<availableValue>
-				<value xsi:type="xs:string">Соединение</value>
-				<presentation xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
-					<d5p1:item>
-						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>Соединение</d5p1:content>
-					</d5p1:item>
-				</presentation>
-			</availableValue>
-			<availableValue>
-				<value xsi:type="xs:string">РабочийСервер</value>
-				<presentation xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
-					<d5p1:item>
-						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>РабочийСервер</d5p1:content>
-					</d5p1:item>
-				</presentation>
-			</availableValue>
-			<availableValue>
-				<value xsi:type="xs:string">ОсновнойIPПорт</value>
-				<presentation xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
-					<d5p1:item>
-						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>ОсновнойIPПорт</d5p1:content>
-					</d5p1:item>
-				</presentation>
-			</availableValue>
-			<availableValue>
-				<value xsi:type="xs:string">ВспомогательныйIPПорт</value>
-				<presentation xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
-					<d5p1:item>
-						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>ВспомогательныйIPПорт</d5p1:content>
-					</d5p1:item>
-				</presentation>
-			</availableValue>
-			<availableValue>
-				<value xsi:type="xs:string">РазделениеДанныхСеанса</value>
-				<presentation xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
-					<d5p1:item>
-						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>РазделениеДанныхСеанса</d5p1:content>
-					</d5p1:item>
-				</presentation>
-			</availableValue>
-			<availableValue>
-				<value xsi:type="xs:string">ПредставлениеРазделенияДанныхСеанса</value>
-				<presentation xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
-					<d5p1:item>
-						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>ПредставлениеРазделенияДанныхСеанса</d5p1:content>
-					</d5p1:item>
-				</presentation>
-			</availableValue>
-			<valueListAllowed>true</valueListAllowed>
-		</parameter>
+				</title>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<objectName>ПользователиИБ</objectName>
+		</dataSet>
+		<dataSetLink>
+			<sourceDataSet>ДанныеЖурналаРегистрации</sourceDataSet>
+			<destinationDataSet>ПользователиИнформационнойБазы</destinationDataSet>
+			<sourceExpression>Пользователь</sourceExpression>
+			<destinationExpression>ПользовательИнформационнойБазы.УникальныйИдентификатор</destinationExpression>
+		</dataSetLink>
 		<parameter>
 			<name>ТекущаяДата</name>
 			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
@@ -1287,22 +496,40 @@
 			<use>Always</use>
 		</parameter>
 		<parameter>
-			<name>Пользователь</name>
+			<name>НачалоПериода</name>
 			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
 				<d4p1:item>
 					<d4p1:lang>ru</d4p1:lang>
-					<d4p1:content>Пользователь</d4p1:content>
+					<d4p1:content>Начало периода</d4p1:content>
 				</d4p1:item>
 			</title>
 			<valueType>
-				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
-				<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
-					<Length>0</Length>
-					<AllowedLength>Variable</AllowedLength>
-				</StringQualifiers>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
 			</valueType>
-			<useRestriction>false</useRestriction>
-			<valueListAllowed>true</valueListAllowed>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>true</useRestriction>
+			<use>Always</use>
+		</parameter>
+		<parameter>
+			<name>КонецПериода</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Конец периода</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>true</useRestriction>
+			<use>Always</use>
 		</parameter>
 		<settingsVariant>
 			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">События журнала регистрации</name>
@@ -1730,7 +957,7 @@
 			<field>Дата</field>
 		</item>
 		<item xsi:type="SelectedItemField">
-			<field>Пользователь</field>
+			<field>ИмяПользователя</field>
 		</item>
 		<item xsi:type="SelectedItemField">
 			<field>Компьютер</field>
@@ -1791,7 +1018,7 @@
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">1</right>
 			<viewMode>Normal</viewMode>
-			<userSettingID>5fa16f86-31d4-40e6-b01c-975c6f04ce26</userSettingID>
+			<userSettingID>333165b4-0e14-47fe-972e-96924f20048d</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<use>false</use>
@@ -1799,7 +1026,7 @@
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">_$Access$_.Access</right>
 			<viewMode>Normal</viewMode>
-			<userSettingID>3567a0f4-8a6f-46bc-99ae-2589e42c8980</userSettingID>
+			<userSettingID>95ce42d9-bea5-4205-809c-a5b9b42adda0</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<use>false</use>
@@ -1807,135 +1034,14 @@
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">1</right>
 			<viewMode>Normal</viewMode>
-			<userSettingID>afdf5f10-dcd1-469f-a2c4-5ed089dd9696</userSettingID>
-		</item>
-		<item xsi:type="FilterItemComparison">
-			<use>false</use>
-			<left xsi:type="dcscor:Field">ПараметрыДанных.ПоляЖурналаРегистрации</left>
-			<comparisonType>InList</comparisonType>
-			<right xsi:type="xs:string">Уровень</right>
-			<right xsi:type="xs:string">Дата</right>
-			<right xsi:type="xs:string">Пользователь</right>
-			<right xsi:type="xs:string">Компьютер</right>
-			<right xsi:type="xs:string">ИмяПриложения</right>
-			<right xsi:type="xs:string">Событие</right>
-			<right xsi:type="xs:string">Комментарий</right>
-			<right xsi:type="xs:string">Метаданные</right>
-			<right xsi:type="xs:string">Данные</right>
-			<right xsi:type="xs:string">ПредставлениеДанных</right>
-			<right xsi:type="xs:string">ИмяПользователя</right>
-			<right xsi:type="xs:string">ПредставлениеПриложения</right>
-			<right xsi:type="xs:string">ПредставлениеСобытия</right>
-			<right xsi:type="xs:string">ПредставлениеМетаданных</right>
-			<right xsi:type="xs:string">СтатусТранзакции</right>
-			<right xsi:type="xs:string">Транзакция</right>
-			<right xsi:type="xs:string">Сеанс</right>
-			<right xsi:type="xs:string">Соединение</right>
-			<right xsi:type="xs:string">РабочийСервер</right>
-			<right xsi:type="xs:string">ОсновнойIPПорт</right>
-			<right xsi:type="xs:string">ВспомогательныйIPПорт</right>
-			<right xsi:type="xs:string">РазделениеДанныхСеанса</right>
-			<right xsi:type="xs:string">ПредставлениеРазделенияДанныхСеанса</right>
-			<viewMode>Normal</viewMode>
-			<userSettingID>1e83f917-e9ec-4966-aa2d-bd09662add8d</userSettingID>
+			<userSettingID>c2c60178-04df-42ac-bcfc-f69036f25354</userSettingID>
 		</item>
 	</filter>
 	<dataParameters>
 		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:parameter>НачалоПериода</dcscor:parameter>
-			<dcscor:value xsi:type="v8:StandardBeginningDate">
-				<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
-			</dcscor:value>
-			<viewMode>Normal</viewMode>
-			<userSettingID>0c37492c-c0cb-4378-90b4-53d7f8eaef32</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:parameter>КонецПериода</dcscor:parameter>
-			<dcscor:value xsi:type="v8:StandardBeginningDate">
-				<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfNextDay</v8:variant>
-			</dcscor:value>
-			<viewMode>Normal</viewMode>
-			<userSettingID>4cb3046c-5d3a-4a29-ba77-4aeceb494b63</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:parameter>МаксимальноеКоличествоЗаписей</dcscor:parameter>
-			<dcscor:value xsi:type="xs:decimal">100</dcscor:value>
-			<viewMode>Normal</viewMode>
-			<userSettingID>915a6337-36a8-4818-a21d-db9e01076319</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>Метаданные</dcscor:parameter>
-			<viewMode>Normal</viewMode>
-			<userSettingID>c909fcee-f02c-4f6b-a026-eecd58cddec5</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>Данные</dcscor:parameter>
-			<dcscor:value xsi:nil="true"/>
-			<viewMode>Normal</viewMode>
-			<userSettingID>41a00913-c03f-478c-aa76-bafcf3d5258b</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>ПредставлениеДанных</dcscor:parameter>
-			<dcscor:value xsi:type="xs:string"/>
-			<viewMode>Normal</viewMode>
-			<userSettingID>fd4bfce1-727f-40ab-8518-4a18f59ea6d4</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>Комментарий</dcscor:parameter>
-			<dcscor:value xsi:type="xs:string"/>
-			<viewMode>Normal</viewMode>
-			<userSettingID>c1cc3a91-94b2-47dd-8d14-753730044b4b</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>ИмяПриложения</dcscor:parameter>
-			<viewMode>Normal</viewMode>
-			<userSettingID>7be87210-eba5-4bb9-b50c-5f1235df0903</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>Компьютер</dcscor:parameter>
-			<viewMode>Normal</viewMode>
-			<userSettingID>646775d7-6af0-4bb0-8750-61ad0bc5ac5d</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>Транзакция</dcscor:parameter>
-			<dcscor:value xsi:type="xs:string"/>
-			<viewMode>Normal</viewMode>
-			<userSettingID>47185c90-c578-4ce1-99c5-f2bdb910a1f1</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>Сеанс</dcscor:parameter>
-			<viewMode>Normal</viewMode>
-			<userSettingID>86de375e-cbc7-409b-bcf5-4c3086e87bb7</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>РабочийСервер</dcscor:parameter>
-			<viewMode>Normal</viewMode>
-			<userSettingID>a6980407-9347-463e-83da-4f62d9d70410</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>ОсновнойIPПорт</dcscor:parameter>
-			<viewMode>Normal</viewMode>
-			<userSettingID>da5db58c-98c5-46eb-826d-0b2f665ad2a3</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>ВспомогательныйIPПорт</dcscor:parameter>
-			<viewMode>Normal</viewMode>
-			<userSettingID>1cf89949-4de4-40af-8a50-afbb56a991f5</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>Пользователь</dcscor:parameter>
+			<dcscor:parameter>ТекущаяДата</dcscor:parameter>
+			<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
 			<viewMode>Normal</viewMode>
 			<userSettingID>38e088fe-77a2-499e-802f-f0accb3b9bd8</userSettingID>
 		</dcscor:item>
@@ -2349,9 +1455,10 @@
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">1</right>
 			<viewMode>Normal</viewMode>
-			<userSettingID>5fa16f86-31d4-40e6-b01c-975c6f04ce26</userSettingID>
+			<userSettingID>2c765dfe-e117-421d-8f88-0a1a1ade9baa</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
+			<use>false</use>
 			<left xsi:type="dcscor:Field">Событие</left>
 			<comparisonType>InList</comparisonType>
 			<right xsi:type="xs:string">_$Data$_.Delete</right>
@@ -2361,7 +1468,7 @@
 			<right xsi:type="xs:string">_$Data$_.Unpost</right>
 			<right xsi:type="xs:string">_$Data$_.Update</right>
 			<viewMode>Normal</viewMode>
-			<userSettingID>3567a0f4-8a6f-46bc-99ae-2589e42c8980</userSettingID>
+			<userSettingID>6e254332-0df7-4cfa-a665-430ba7b7ff0b</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<use>false</use>
@@ -2369,71 +1476,14 @@
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">1</right>
 			<viewMode>Normal</viewMode>
-			<userSettingID>18b7b2b3-45ab-418d-8040-830688e2f1f8</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
-			<left xsi:type="dcscor:Field">ПараметрыДанных.ПоляЖурналаРегистрации</left>
-			<comparisonType>InList</comparisonType>
-			<right xsi:type="xs:string">Уровень</right>
-			<right xsi:type="xs:string">Дата</right>
-			<right xsi:type="xs:string">Событие</right>
-			<right xsi:type="xs:string">Комментарий</right>
-			<right xsi:type="xs:string">Данные</right>
-			<right xsi:type="xs:string">ИмяПользователя</right>
-			<viewMode>Normal</viewMode>
-			<userSettingID>e265996a-081a-49c0-8222-c3ed5df4572a</userSettingID>
-		</item>
-		<item xsi:type="FilterItemComparison">
+			<use>false</use>
 			<left xsi:type="dcscor:Field">Данные</left>
 			<comparisonType>Filled</comparisonType>
 			<viewMode>Normal</viewMode>
-			<userSettingID>4f2a22b4-3256-4718-a4ac-267c8494fa87</userSettingID>
 		</item>
 	</filter>
-	<dataParameters>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:parameter>НачалоПериода</dcscor:parameter>
-			<dcscor:value xsi:type="v8:StandardBeginningDate">
-				<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
-			</dcscor:value>
-			<viewMode>Normal</viewMode>
-			<userSettingID>0c37492c-c0cb-4378-90b4-53d7f8eaef32</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:parameter>КонецПериода</dcscor:parameter>
-			<dcscor:value xsi:type="v8:StandardBeginningDate">
-				<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfNextDay</v8:variant>
-			</dcscor:value>
-			<viewMode>Normal</viewMode>
-			<userSettingID>4cb3046c-5d3a-4a29-ba77-4aeceb494b63</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>МаксимальноеКоличествоЗаписей</dcscor:parameter>
-			<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
-			<viewMode>Normal</viewMode>
-			<userSettingID>915a6337-36a8-4818-a21d-db9e01076319</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>Метаданные</dcscor:parameter>
-			<viewMode>Normal</viewMode>
-			<userSettingID>1b66f7af-882e-4ee1-8219-851401cb9179</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>Данные</dcscor:parameter>
-			<dcscor:value xsi:nil="true"/>
-			<viewMode>Normal</viewMode>
-			<userSettingID>d8cf1930-790e-412a-8a96-1bd70d6439e6</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>Пользователь</dcscor:parameter>
-			<viewMode>Normal</viewMode>
-			<userSettingID>0cce7118-2b07-4170-83bc-544aeebea674</userSettingID>
-		</dcscor:item>
-	</dataParameters>
 	<order>
 		<item xsi:type="OrderItemField">
 			<field>Дата</field>
@@ -2746,7 +1796,6 @@
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">1</right>
 			<viewMode>Normal</viewMode>
-			<userSettingID>5fa16f86-31d4-40e6-b01c-975c6f04ce26</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<use>false</use>
@@ -2754,59 +1803,21 @@
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">_$Access$_.Access</right>
 			<viewMode>Normal</viewMode>
-			<userSettingID>3567a0f4-8a6f-46bc-99ae-2589e42c8980</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<use>false</use>
 			<left xsi:type="dcscor:Field">СтатусТранзакции</left>
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">1</right>
-		</item>
-		<item xsi:type="FilterItemComparison">
-			<left xsi:type="dcscor:Field">ПараметрыДанных.ПоляЖурналаРегистрации</left>
-			<comparisonType>InList</comparisonType>
-			<right xsi:type="xs:string">Дата</right>
-			<right xsi:type="xs:string">ИмяПользователя</right>
 			<viewMode>Normal</viewMode>
-			<userSettingID>1fb89a31-ea0d-4478-8f63-eeb9cb1ede75</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
+			<use>false</use>
 			<left xsi:type="dcscor:Field">ИмяПользователя</left>
 			<comparisonType>Filled</comparisonType>
 			<viewMode>Normal</viewMode>
-			<userSettingID>ea5e0bab-f831-4e3f-9712-6b2d2045eab8</userSettingID>
 		</item>
 	</filter>
-	<dataParameters>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:parameter>НачалоПериода</dcscor:parameter>
-			<dcscor:value xsi:type="v8:StandardBeginningDate">
-				<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
-			</dcscor:value>
-			<viewMode>Normal</viewMode>
-			<userSettingID>0c37492c-c0cb-4378-90b4-53d7f8eaef32</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:parameter>КонецПериода</dcscor:parameter>
-			<dcscor:value xsi:type="v8:StandardBeginningDate">
-				<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfNextDay</v8:variant>
-			</dcscor:value>
-			<viewMode>Normal</viewMode>
-			<userSettingID>4cb3046c-5d3a-4a29-ba77-4aeceb494b63</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>МаксимальноеКоличествоЗаписей</dcscor:parameter>
-			<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
-			<viewMode>Normal</viewMode>
-			<userSettingID>915a6337-36a8-4818-a21d-db9e01076319</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>Данные</dcscor:parameter>
-			<dcscor:value xsi:nil="true"/>
-		</dcscor:item>
-	</dataParameters>
 	<order>
 		<item xsi:type="OrderItemField">
 			<field>ПользовательскиеПоля.Поле11</field>
@@ -3090,7 +2101,6 @@
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">1</right>
 			<viewMode>Normal</viewMode>
-			<userSettingID>5fa16f86-31d4-40e6-b01c-975c6f04ce26</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<use>false</use>
@@ -3098,7 +2108,6 @@
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">_$Access$_.Access</right>
 			<viewMode>Normal</viewMode>
-			<userSettingID>3567a0f4-8a6f-46bc-99ae-2589e42c8980</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<use>false</use>
@@ -3106,59 +2115,13 @@
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">1</right>
 			<viewMode>Normal</viewMode>
-			<userSettingID>9d92b3cb-4821-4481-ab2b-3dbe2e30541b</userSettingID>
-		</item>
-		<item xsi:type="FilterItemComparison">
-			<left xsi:type="dcscor:Field">ПараметрыДанных.ПоляЖурналаРегистрации</left>
-			<comparisonType>InList</comparisonType>
-			<right xsi:type="xs:string">Дата</right>
-			<right xsi:type="xs:string">ИмяПользователя</right>
-			<viewMode>Normal</viewMode>
-			<userSettingID>b54fb65f-be29-4b79-86da-37f4c7c92a4e</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<left xsi:type="dcscor:Field">ИмяПользователя</left>
 			<comparisonType>Filled</comparisonType>
 			<viewMode>Normal</viewMode>
-			<userSettingID>385772cc-624a-4633-9ce4-3b2b056db05d</userSettingID>
 		</item>
 	</filter>
-	<dataParameters>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:parameter>НачалоПериода</dcscor:parameter>
-			<dcscor:value xsi:type="v8:StandardBeginningDate">
-				<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
-			</dcscor:value>
-			<viewMode>Normal</viewMode>
-			<userSettingID>0c37492c-c0cb-4378-90b4-53d7f8eaef32</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:parameter>КонецПериода</dcscor:parameter>
-			<dcscor:value xsi:type="v8:StandardBeginningDate">
-				<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfNextDay</v8:variant>
-			</dcscor:value>
-			<viewMode>Normal</viewMode>
-			<userSettingID>4cb3046c-5d3a-4a29-ba77-4aeceb494b63</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>МаксимальноеКоличествоЗаписей</dcscor:parameter>
-			<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
-			<viewMode>Normal</viewMode>
-			<userSettingID>915a6337-36a8-4818-a21d-db9e01076319</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>Данные</dcscor:parameter>
-			<dcscor:value xsi:nil="true"/>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>Пользователь</dcscor:parameter>
-			<viewMode>Normal</viewMode>
-			<userSettingID>b54fd473-a942-4ed5-9ea4-c48f54e7f33c</userSettingID>
-		</dcscor:item>
-	</dataParameters>
 	<order>
 		<item xsi:type="OrderItemField">
 			<field>Дата</field>
@@ -3505,7 +2468,6 @@
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">1</right>
 			<viewMode>Normal</viewMode>
-			<userSettingID>5fa16f86-31d4-40e6-b01c-975c6f04ce26</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<left xsi:type="dcscor:Field">Событие</left>
@@ -3513,7 +2475,6 @@
 			<right xsi:type="xs:string">_$Session$_.Start</right>
 			<right xsi:type="xs:string">_$Session$_.Finish</right>
 			<viewMode>Normal</viewMode>
-			<userSettingID>3567a0f4-8a6f-46bc-99ae-2589e42c8980</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<use>false</use>
@@ -3521,61 +2482,13 @@
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">1</right>
 			<viewMode>Normal</viewMode>
-			<userSettingID>df7db4bc-577b-4b1d-a08f-33442d0e6e28</userSettingID>
-		</item>
-		<item xsi:type="FilterItemComparison">
-			<left xsi:type="dcscor:Field">ПараметрыДанных.ПоляЖурналаРегистрации</left>
-			<comparisonType>InList</comparisonType>
-			<right xsi:type="xs:string">Дата</right>
-			<right xsi:type="xs:string">ИмяПользователя</right>
-			<right xsi:type="xs:string">Сеанс</right>
-			<right xsi:type="xs:string">Событие</right>
-			<viewMode>Normal</viewMode>
-			<userSettingID>d8b690ab-1e9b-423d-9dd2-fc03b7c8ce58</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<left xsi:type="dcscor:Field">ИмяПользователя</left>
 			<comparisonType>Filled</comparisonType>
 			<viewMode>Normal</viewMode>
-			<userSettingID>28768b9c-274d-49e7-b66e-2704f82ab6cd</userSettingID>
 		</item>
 	</filter>
-	<dataParameters>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:parameter>НачалоПериода</dcscor:parameter>
-			<dcscor:value xsi:type="v8:StandardBeginningDate">
-				<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
-			</dcscor:value>
-			<viewMode>Normal</viewMode>
-			<userSettingID>0c37492c-c0cb-4378-90b4-53d7f8eaef32</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:parameter>КонецПериода</dcscor:parameter>
-			<dcscor:value xsi:type="v8:StandardBeginningDate">
-				<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfNextDay</v8:variant>
-			</dcscor:value>
-			<viewMode>Normal</viewMode>
-			<userSettingID>4cb3046c-5d3a-4a29-ba77-4aeceb494b63</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>МаксимальноеКоличествоЗаписей</dcscor:parameter>
-			<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
-			<viewMode>Normal</viewMode>
-			<userSettingID>915a6337-36a8-4818-a21d-db9e01076319</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>Данные</dcscor:parameter>
-			<dcscor:value xsi:nil="true"/>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>Пользователь</dcscor:parameter>
-			<viewMode>Normal</viewMode>
-			<userSettingID>8c715f7c-0cf3-4f8b-bdc0-ae30f241f2c8</userSettingID>
-		</dcscor:item>
-	</dataParameters>
 	<order>
 		<item xsi:type="OrderItemField">
 			<field>Дата</field>
@@ -4036,7 +2949,6 @@
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">1</right>
 			<viewMode>Normal</viewMode>
-			<userSettingID>5fa16f86-31d4-40e6-b01c-975c6f04ce26</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<use>false</use>
@@ -4044,7 +2956,6 @@
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">_$Access$_.Access</right>
 			<viewMode>Normal</viewMode>
-			<userSettingID>3567a0f4-8a6f-46bc-99ae-2589e42c8980</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<use>false</use>
@@ -4052,65 +2963,13 @@
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">1</right>
 			<viewMode>Normal</viewMode>
-			<userSettingID>f9a68c4b-4501-4828-b6cb-c67283711991</userSettingID>
-		</item>
-		<item xsi:type="FilterItemComparison">
-			<left xsi:type="dcscor:Field">ПараметрыДанных.ПоляЖурналаРегистрации</left>
-			<comparisonType>InList</comparisonType>
-			<right xsi:type="xs:string">Дата</right>
-			<right xsi:type="xs:string">Метаданные</right>
-			<viewMode>Normal</viewMode>
-			<userSettingID>0fbe2f78-624e-4030-9ad8-6bcef78db5e1</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<left xsi:type="dcscor:Field">Метаданные</left>
 			<comparisonType>Filled</comparisonType>
 			<viewMode>Normal</viewMode>
-			<userSettingID>d39f42c1-4962-4f52-ac13-bf69806dbf0d</userSettingID>
 		</item>
 	</filter>
-	<dataParameters>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:parameter>НачалоПериода</dcscor:parameter>
-			<dcscor:value xsi:type="v8:StandardBeginningDate">
-				<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
-			</dcscor:value>
-			<viewMode>Normal</viewMode>
-			<userSettingID>0c37492c-c0cb-4378-90b4-53d7f8eaef32</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:parameter>КонецПериода</dcscor:parameter>
-			<dcscor:value xsi:type="v8:StandardBeginningDate">
-				<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfNextDay</v8:variant>
-			</dcscor:value>
-			<viewMode>Normal</viewMode>
-			<userSettingID>4cb3046c-5d3a-4a29-ba77-4aeceb494b63</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>МаксимальноеКоличествоЗаписей</dcscor:parameter>
-			<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
-			<viewMode>Normal</viewMode>
-			<userSettingID>915a6337-36a8-4818-a21d-db9e01076319</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>Метаданные</dcscor:parameter>
-			<viewMode>Normal</viewMode>
-			<userSettingID>2f8b2204-90ac-4149-83a1-9746540d7990</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>Данные</dcscor:parameter>
-			<dcscor:value xsi:nil="true"/>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>Пользователь</dcscor:parameter>
-			<viewMode>Normal</viewMode>
-			<userSettingID>2996575c-a311-447b-81c3-0b58a2423924</userSettingID>
-		</dcscor:item>
-	</dataParameters>
 	<order>
 		<item xsi:type="OrderItemField">
 			<field>ПользовательскиеПоля.Поле2</field>
@@ -4543,16 +3402,15 @@
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">2</right>
 			<viewMode>Normal</viewMode>
-			<userSettingID>5fa16f86-31d4-40e6-b01c-975c6f04ce26</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
+			<use>false</use>
 			<left xsi:type="dcscor:Field">Событие</left>
 			<comparisonType>InList</comparisonType>
 			<right xsi:type="xs:string">_$InfoBase$_.TARImportant</right>
 			<right xsi:type="xs:string">_$Job$_.Fail</right>
 			<right xsi:type="xs:string">_$PerformError$_</right>
 			<viewMode>Normal</viewMode>
-			<userSettingID>3567a0f4-8a6f-46bc-99ae-2589e42c8980</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<use>false</use>
@@ -4560,66 +3418,8 @@
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">1</right>
 			<viewMode>Normal</viewMode>
-			<userSettingID>dc0f51bf-c23e-4cee-bfab-5744609afcc0</userSettingID>
-		</item>
-		<item xsi:type="FilterItemComparison">
-			<left xsi:type="dcscor:Field">ПараметрыДанных.ПоляЖурналаРегистрации</left>
-			<comparisonType>InList</comparisonType>
-			<right xsi:type="xs:string">Уровень</right>
-			<right xsi:type="xs:string">Дата</right>
-			<right xsi:type="xs:string">Компьютер</right>
-			<right xsi:type="xs:string">ИмяПриложения</right>
-			<right xsi:type="xs:string">Событие</right>
-			<right xsi:type="xs:string">Комментарий</right>
-			<right xsi:type="xs:string">Метаданные</right>
-			<right xsi:type="xs:string">Данные</right>
-			<right xsi:type="xs:string">ПредставлениеДанных</right>
-			<right xsi:type="xs:string">ИмяПользователя</right>
-			<right xsi:type="xs:string">ПредставлениеПриложения</right>
-			<right xsi:type="xs:string">ПредставлениеСобытия</right>
-			<right xsi:type="xs:string">ПредставлениеМетаданных</right>
-			<right xsi:type="xs:string">СтатусТранзакции</right>
-			<right xsi:type="xs:string">Транзакция</right>
-			<viewMode>Normal</viewMode>
-			<userSettingID>55aa1617-65c9-4a9d-a8db-9eb34c6a149f</userSettingID>
 		</item>
 	</filter>
-	<dataParameters>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:parameter>НачалоПериода</dcscor:parameter>
-			<dcscor:value xsi:type="v8:StandardBeginningDate">
-				<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
-			</dcscor:value>
-			<viewMode>Normal</viewMode>
-			<userSettingID>0c37492c-c0cb-4378-90b4-53d7f8eaef32</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:parameter>КонецПериода</dcscor:parameter>
-			<dcscor:value xsi:type="v8:StandardBeginningDate">
-				<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfNextDay</v8:variant>
-			</dcscor:value>
-			<viewMode>Normal</viewMode>
-			<userSettingID>4cb3046c-5d3a-4a29-ba77-4aeceb494b63</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>МаксимальноеКоличествоЗаписей</dcscor:parameter>
-			<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
-			<viewMode>Normal</viewMode>
-			<userSettingID>915a6337-36a8-4818-a21d-db9e01076319</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>Данные</dcscor:parameter>
-			<dcscor:value xsi:nil="true"/>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>Пользователь</dcscor:parameter>
-			<viewMode>Normal</viewMode>
-			<userSettingID>1fda343c-c0f5-4ca6-827a-dcc13bd05c97</userSettingID>
-		</dcscor:item>
-	</dataParameters>
 	<order>
 		<item xsi:type="OrderItemField">
 			<field>Дата</field>
@@ -5054,15 +3854,14 @@
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">1</right>
 			<viewMode>Normal</viewMode>
-			<userSettingID>5fa16f86-31d4-40e6-b01c-975c6f04ce26</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
+			<use>false</use>
 			<left xsi:type="dcscor:Field">Событие</left>
 			<comparisonType>InList</comparisonType>
 			<right xsi:type="xs:string">_$Access$_.AccessDenied</right>
 			<right xsi:type="xs:string">_$Session$_.AuthenticationError</right>
 			<viewMode>Normal</viewMode>
-			<userSettingID>3567a0f4-8a6f-46bc-99ae-2589e42c8980</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<use>false</use>
@@ -5071,60 +3870,7 @@
 			<right xsi:type="xs:string">1</right>
 			<viewMode>Normal</viewMode>
 		</item>
-		<item xsi:type="FilterItemComparison">
-			<left xsi:type="dcscor:Field">ПараметрыДанных.ПоляЖурналаРегистрации</left>
-			<comparisonType>InList</comparisonType>
-			<right xsi:type="xs:string">ИмяПользователя</right>
-			<right xsi:type="xs:string">Дата</right>
-			<right xsi:type="xs:string">Уровень</right>
-			<right xsi:type="xs:string">Компьютер</right>
-			<right xsi:type="xs:string">ИмяПриложения</right>
-			<right xsi:type="xs:string">Событие</right>
-			<right xsi:type="xs:string">Метаданные</right>
-			<right xsi:type="xs:string">Комментарий</right>
-			<right xsi:type="xs:string">Данные</right>
-			<right xsi:type="xs:string">ПредставлениеДанных</right>
-			<right xsi:type="xs:string">Сеанс</right>
-			<right xsi:type="xs:string">Соединение</right>
-			<viewMode>Normal</viewMode>
-		</item>
 	</filter>
-	<dataParameters>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:parameter>НачалоПериода</dcscor:parameter>
-			<dcscor:value xsi:type="v8:StandardBeginningDate">
-				<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
-			</dcscor:value>
-			<viewMode>Normal</viewMode>
-			<userSettingID>0c37492c-c0cb-4378-90b4-53d7f8eaef32</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:parameter>КонецПериода</dcscor:parameter>
-			<dcscor:value xsi:type="v8:StandardBeginningDate">
-				<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfNextDay</v8:variant>
-			</dcscor:value>
-			<viewMode>Normal</viewMode>
-			<userSettingID>4cb3046c-5d3a-4a29-ba77-4aeceb494b63</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>МаксимальноеКоличествоЗаписей</dcscor:parameter>
-			<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
-			<viewMode>Normal</viewMode>
-			<userSettingID>915a6337-36a8-4818-a21d-db9e01076319</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>Данные</dcscor:parameter>
-			<dcscor:value xsi:nil="true"/>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>Пользователь</dcscor:parameter>
-			<viewMode>Normal</viewMode>
-			<userSettingID>19c1f698-ed0d-4abd-a4e4-04a9b62da7a7</userSettingID>
-		</dcscor:item>
-	</dataParameters>
 	<order>
 		<item xsi:type="OrderItemField">
 			<field>Дата</field>
@@ -5421,77 +4167,25 @@
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:string">1</right>
 			<viewMode>Normal</viewMode>
-			<userSettingID>5fa16f86-31d4-40e6-b01c-975c6f04ce26</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
+			<use>false</use>
 			<left xsi:type="dcscor:Field">Событие</left>
 			<comparisonType>InList</comparisonType>
 			<right xsi:type="xs:string">_$Transaction$_.Begin</right>
 			<right xsi:type="xs:string">_$Transaction$_.Commit</right>
 			<right xsi:type="xs:string">_$Transaction$_.Rollback</right>
 			<viewMode>Normal</viewMode>
-			<userSettingID>3567a0f4-8a6f-46bc-99ae-2589e42c8980</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
+			<use>false</use>
 			<left xsi:type="dcscor:Field">СтатусТранзакции</left>
 			<comparisonType>InList</comparisonType>
 			<right xsi:type="xs:string">1</right>
 			<right xsi:type="xs:string">4</right>
 			<viewMode>Normal</viewMode>
 		</item>
-		<item xsi:type="FilterItemComparison">
-			<left xsi:type="dcscor:Field">ПараметрыДанных.ПоляЖурналаРегистрации</left>
-			<comparisonType>InList</comparisonType>
-			<right xsi:type="xs:string">Уровень</right>
-			<right xsi:type="xs:string">Дата</right>
-			<right xsi:type="xs:string">СтатусТранзакции</right>
-			<right xsi:type="xs:string">Транзакция</right>
-			<viewMode>Normal</viewMode>
-			<userSettingID>ba3f9525-308c-46a0-b84c-0c88e785d744</userSettingID>
-		</item>
 	</filter>
-	<dataParameters>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:parameter>НачалоПериода</dcscor:parameter>
-			<dcscor:value xsi:type="v8:StandardBeginningDate">
-				<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
-			</dcscor:value>
-			<viewMode>Normal</viewMode>
-			<userSettingID>0c37492c-c0cb-4378-90b4-53d7f8eaef32</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:parameter>КонецПериода</dcscor:parameter>
-			<dcscor:value xsi:type="v8:StandardBeginningDate">
-				<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfNextDay</v8:variant>
-			</dcscor:value>
-			<viewMode>Normal</viewMode>
-			<userSettingID>4cb3046c-5d3a-4a29-ba77-4aeceb494b63</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>МаксимальноеКоличествоЗаписей</dcscor:parameter>
-			<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
-			<viewMode>Normal</viewMode>
-			<userSettingID>915a6337-36a8-4818-a21d-db9e01076319</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>Метаданные</dcscor:parameter>
-			<viewMode>Normal</viewMode>
-			<userSettingID>20ef66d6-6457-4e8d-b6dd-05b33d4008f6</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>Данные</dcscor:parameter>
-			<dcscor:value xsi:nil="true"/>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>Пользователь</dcscor:parameter>
-			<viewMode>Normal</viewMode>
-			<userSettingID>47a22a32-4e52-4e51-83a9-420b4bb09bdb</userSettingID>
-		</dcscor:item>
-	</dataParameters>
 	<order>
 		<item xsi:type="OrderItemField">
 			<field>Дата</field>
