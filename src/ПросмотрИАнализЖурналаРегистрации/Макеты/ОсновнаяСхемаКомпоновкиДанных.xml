@@ -114,6 +114,7 @@
 	Когда Событие = "_$InfoBase$_.DBConfigBackgroundUpdateCancel" Тогда "Информационная база. Отмена фонового обновления"
 	Когда Событие = "_$InfoBase$_.DBConfigBackgroundUpdateSuspend" Тогда "Информационная база. Приостановка (пауза) процесса фонового обновления"
 	Когда Событие = "_$InfoBase$_.DBConfigBackgroundUpdateResume" Тогда "Информационная база. Продолжение (после приостановки) процесса фонового обновления"
+	Когда Событие = "_$InfoBase$_.DBConfigUpdate" Тогда "Информационная база. Изменение"
 	Когда Событие = "_$InfoBase$_.DBConfigExtensionUpdate" Тогда "Информационная база. Изменение расширения конфигурации базы данных"
 	Когда Событие = "_$InfoBase$_.EventLogSettingsUpdate" Тогда "Доступ. Доступ"
 	Когда Событие = "_$Access$_.Access" Тогда "Информационная база. Изменение параметров журнала регистрации"
@@ -207,7 +208,7 @@
 				</valueType>
 				<appearance>
 					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
-						<parameter>МинимальнаяШирина</parameter>
+						<parameter>MinimumWidth</parameter>
 						<value xsi:type="xs:decimal">30</value>
 					</item>
 				</appearance>
