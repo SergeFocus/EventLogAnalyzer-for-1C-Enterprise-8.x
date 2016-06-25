@@ -208,7 +208,7 @@
 				</valueType>
 				<appearance>
 					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
-						<parameter>MinimumWidth</parameter>
+						<parameter>МинимальнаяШирина</parameter>
 						<value xsi:type="xs:decimal">30</value>
 					</item>
 				</appearance>
@@ -3449,7 +3449,7 @@
 	<item xsi:type="StructureItemGroup">
 		<groupItems>
 			<item xsi:type="GroupItemField">
-				<field>Событие</field>
+				<field>Комментарий</field>
 				<groupType>Items</groupType>
 				<periodAdditionType>None</periodAdditionType>
 				<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
@@ -3463,12 +3463,29 @@
 			<item xsi:type="SelectedItemAuto"/>
 		</selection>
 		<item xsi:type="StructureItemGroup">
+			<groupItems>
+				<item xsi:type="GroupItemField">
+					<field>Событие</field>
+					<groupType>Items</groupType>
+					<periodAdditionType>None</periodAdditionType>
+					<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+					<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+				</item>
+			</groupItems>
 			<order>
 				<item xsi:type="OrderItemAuto"/>
 			</order>
 			<selection>
 				<item xsi:type="SelectedItemAuto"/>
 			</selection>
+			<item xsi:type="StructureItemGroup">
+				<order>
+					<item xsi:type="OrderItemAuto"/>
+				</order>
+				<selection>
+					<item xsi:type="SelectedItemAuto"/>
+				</selection>
+			</item>
 		</item>
 	</item>
 </Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
