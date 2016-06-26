@@ -23,6 +23,15 @@
 						<AllowedLength>Variable</AllowedLength>
 					</StringQualifiers>
 				</valueType>
+				<availableValue>
+					<value xsi:type="xs:string"> </value>
+					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content> </d6p1:content>
+						</d6p1:item>
+					</presentation>
+				</availableValue>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Дата</dataPath>
@@ -52,6 +61,15 @@
 				<valueType>
 					<Type xmlns="http://v8.1c.ru/8.1/data/core">UUID</Type>
 				</valueType>
+				<availableValue>
+					<value xsi:nil="true"/>
+					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content> </d6p1:content>
+						</d6p1:item>
+					</presentation>
+				</availableValue>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Компьютер</dataPath>
@@ -69,6 +87,15 @@
 						<AllowedLength>Variable</AllowedLength>
 					</StringQualifiers>
 				</valueType>
+				<availableValue>
+					<value xsi:type="xs:string"> </value>
+					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content> </d6p1:content>
+						</d6p1:item>
+					</presentation>
+				</availableValue>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ИмяПриложения</dataPath>
@@ -79,6 +106,11 @@
 						<d5p1:content>Имя приложения</d5p1:content>
 					</d5p1:item>
 				</title>
+				<presentationExpression>Выбор Когда ИмяПриложения = "Designer" Тогда "Конфигуратор"
+	Когда ИмяПриложения = "BackgroundJob" Тогда "Фоновое задание"
+	Когда ИмяПриложения = "1CV8C" Тогда "Тонкий клиент"
+	Когда ИмяПриложения = "1CV8" Тогда "Толстый клиент"
+Иначе ИмяПриложения Конец</presentationExpression>
 				<valueType>
 					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
 					<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
@@ -86,6 +118,15 @@
 						<AllowedLength>Variable</AllowedLength>
 					</StringQualifiers>
 				</valueType>
+				<availableValue>
+					<value xsi:type="xs:string"> </value>
+					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content> </d6p1:content>
+						</d6p1:item>
+					</presentation>
+				</availableValue>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Событие</dataPath>
@@ -159,6 +200,15 @@
 						<AllowedLength>Variable</AllowedLength>
 					</StringQualifiers>
 				</valueType>
+				<availableValue>
+					<value xsi:type="xs:string"> </value>
+					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content> </d6p1:content>
+						</d6p1:item>
+					</presentation>
+				</availableValue>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Комментарий</dataPath>
@@ -193,6 +243,15 @@
 						<AllowedLength>Variable</AllowedLength>
 					</StringQualifiers>
 				</valueType>
+				<availableValue>
+					<value xsi:type="xs:string"> </value>
+					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content> </d6p1:content>
+						</d6p1:item>
+					</presentation>
+				</availableValue>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Данные</dataPath>
@@ -246,6 +305,15 @@
 						<AllowedLength>Variable</AllowedLength>
 					</StringQualifiers>
 				</valueType>
+				<availableValue>
+					<value xsi:type="xs:string"> </value>
+					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content> </d6p1:content>
+						</d6p1:item>
+					</presentation>
+				</availableValue>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ПредставлениеПриложения</dataPath>
@@ -314,6 +382,15 @@
 						<AllowedLength>Variable</AllowedLength>
 					</StringQualifiers>
 				</valueType>
+				<availableValue>
+					<value xsi:type="xs:string"> </value>
+					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content> </d6p1:content>
+						</d6p1:item>
+					</presentation>
+				</availableValue>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Транзакция</dataPath>
@@ -384,6 +461,15 @@
 						<AllowedLength>Variable</AllowedLength>
 					</StringQualifiers>
 				</valueType>
+				<availableValue>
+					<value xsi:type="xs:string"> </value>
+					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content> </d6p1:content>
+						</d6p1:item>
+					</presentation>
+				</availableValue>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ОсновнойIPПорт</dataPath>
@@ -402,6 +488,15 @@
 						<AllowedSign>Any</AllowedSign>
 					</NumberQualifiers>
 				</valueType>
+				<availableValue>
+					<value xsi:type="xs:decimal">0</value>
+					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content> </d6p1:content>
+						</d6p1:item>
+					</presentation>
+				</availableValue>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ВспомогательныйIPПорт</dataPath>
@@ -420,6 +515,15 @@
 						<AllowedSign>Any</AllowedSign>
 					</NumberQualifiers>
 				</valueType>
+				<availableValue>
+					<value xsi:type="xs:decimal">0</value>
+					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content> </d6p1:content>
+						</d6p1:item>
+					</presentation>
+				</availableValue>
 			</field>
 			<dataSource>ИсточникДанных1</dataSource>
 			<objectName>ТабЖур</objectName>
@@ -1017,7 +1121,6 @@
 			<use>false</use>
 			<left xsi:type="dcscor:Field">Уровень</left>
 			<comparisonType>Equal</comparisonType>
-			<right xsi:type="xs:string">1</right>
 			<viewMode>Normal</viewMode>
 			<userSettingID>333165b4-0e14-47fe-972e-96924f20048d</userSettingID>
 		</item>
@@ -1025,7 +1128,6 @@
 			<use>false</use>
 			<left xsi:type="dcscor:Field">Событие</left>
 			<comparisonType>Equal</comparisonType>
-			<right xsi:type="xs:string">_$Access$_.Access</right>
 			<viewMode>Normal</viewMode>
 			<userSettingID>95ce42d9-bea5-4205-809c-a5b9b42adda0</userSettingID>
 		</item>
@@ -1033,7 +1135,6 @@
 			<use>false</use>
 			<left xsi:type="dcscor:Field">СтатусТранзакции</left>
 			<comparisonType>Equal</comparisonType>
-			<right xsi:type="xs:string">1</right>
 			<viewMode>Normal</viewMode>
 			<userSettingID>c2c60178-04df-42ac-bcfc-f69036f25354</userSettingID>
 		</item>
@@ -1454,7 +1555,6 @@
 			<use>false</use>
 			<left xsi:type="dcscor:Field">Уровень</left>
 			<comparisonType>Equal</comparisonType>
-			<right xsi:type="xs:string">1</right>
 			<viewMode>Normal</viewMode>
 			<userSettingID>2c765dfe-e117-421d-8f88-0a1a1ade9baa</userSettingID>
 		</item>
@@ -1462,12 +1562,10 @@
 			<use>false</use>
 			<left xsi:type="dcscor:Field">Событие</left>
 			<comparisonType>InList</comparisonType>
-			<right xsi:type="xs:string">_$Data$_.Delete</right>
-			<right xsi:type="xs:string">_$Data$_.New</right>
-			<right xsi:type="xs:string">_$Data$_.Post</right>
-			<right xsi:type="xs:string">_$Data$_.TotalsPeriodUpdate</right>
-			<right xsi:type="xs:string">_$Data$_.Unpost</right>
-			<right xsi:type="xs:string">_$Data$_.Update</right>
+			<right xsi:type="v8:ValueListType">
+				<v8:valueType/>
+				<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+			</right>
 			<viewMode>Normal</viewMode>
 			<userSettingID>6e254332-0df7-4cfa-a665-430ba7b7ff0b</userSettingID>
 		</item>
@@ -1475,14 +1573,28 @@
 			<use>false</use>
 			<left xsi:type="dcscor:Field">СтатусТранзакции</left>
 			<comparisonType>Equal</comparisonType>
-			<right xsi:type="xs:string">1</right>
 			<viewMode>Normal</viewMode>
+			<userSettingID>a6dda44d-e58f-4942-9358-0a48084538e3</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">Данные</left>
+			<comparisonType>Equal</comparisonType>
+			<viewMode>Normal</viewMode>
+			<userSettingID>45dc3b90-ff7d-4462-a3d8-41bcb736deca</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<use>false</use>
 			<left xsi:type="dcscor:Field">Данные</left>
 			<comparisonType>Filled</comparisonType>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные заполнены для события</v8:content>
+				</v8:item>
+			</presentation>
 			<viewMode>Normal</viewMode>
+			<userSettingID>8a501985-c20c-4fe8-a937-db0c02e11db7</userSettingID>
 		</item>
 	</filter>
 	<order>
@@ -1795,28 +1907,43 @@
 			<use>false</use>
 			<left xsi:type="dcscor:Field">Уровень</left>
 			<comparisonType>Equal</comparisonType>
-			<right xsi:type="xs:string">1</right>
 			<viewMode>Normal</viewMode>
+			<userSettingID>8faf0f8b-2e9b-46ea-861e-773c0c71ed63</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<use>false</use>
 			<left xsi:type="dcscor:Field">Событие</left>
 			<comparisonType>Equal</comparisonType>
-			<right xsi:type="xs:string">_$Access$_.Access</right>
 			<viewMode>Normal</viewMode>
+			<userSettingID>29610821-97ae-49a6-920f-4e812c00a7ed</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<use>false</use>
 			<left xsi:type="dcscor:Field">СтатусТранзакции</left>
 			<comparisonType>Equal</comparisonType>
-			<right xsi:type="xs:string">1</right>
 			<viewMode>Normal</viewMode>
+			<userSettingID>42728d1e-4cd1-447b-8b74-4fdc0cb20aee</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">ИмяПользователя</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:string"> </right>
+			<viewMode>Normal</viewMode>
+			<userSettingID>1a52c795-226e-44b2-9b99-080d33febd56</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<use>false</use>
 			<left xsi:type="dcscor:Field">ИмяПользователя</left>
 			<comparisonType>Filled</comparisonType>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователь заполнен для события</v8:content>
+				</v8:item>
+			</presentation>
 			<viewMode>Normal</viewMode>
+			<userSettingID>f602457e-fd30-4172-bd5a-2ae16a4e37ce</userSettingID>
 		</item>
 	</filter>
 	<order>
@@ -2100,27 +2227,42 @@
 			<use>false</use>
 			<left xsi:type="dcscor:Field">Уровень</left>
 			<comparisonType>Equal</comparisonType>
-			<right xsi:type="xs:string">1</right>
 			<viewMode>Normal</viewMode>
+			<userSettingID>5c143b6f-686f-463f-a1b7-7df7fef6e781</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<use>false</use>
 			<left xsi:type="dcscor:Field">Событие</left>
 			<comparisonType>Equal</comparisonType>
-			<right xsi:type="xs:string">_$Access$_.Access</right>
 			<viewMode>Normal</viewMode>
+			<userSettingID>cf20cefd-d74a-4720-bd56-49d9f709ce9d</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<use>false</use>
 			<left xsi:type="dcscor:Field">СтатусТранзакции</left>
 			<comparisonType>Equal</comparisonType>
-			<right xsi:type="xs:string">1</right>
 			<viewMode>Normal</viewMode>
+			<userSettingID>273c9986-25aa-448c-8fc8-e82a3294e9a0</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">ИмяПользователя</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:string"> </right>
+			<viewMode>Normal</viewMode>
+			<userSettingID>445a999e-8a37-4df7-a349-32afe9d1f7b4</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<left xsi:type="dcscor:Field">ИмяПользователя</left>
 			<comparisonType>Filled</comparisonType>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователь заполнен для события</v8:content>
+				</v8:item>
+			</presentation>
 			<viewMode>Normal</viewMode>
+			<userSettingID>26e65bb1-19cf-4370-804d-4a63bf47a540</userSettingID>
 		</item>
 	</filter>
 	<order>
@@ -2467,27 +2609,46 @@
 			<use>false</use>
 			<left xsi:type="dcscor:Field">Уровень</left>
 			<comparisonType>Equal</comparisonType>
-			<right xsi:type="xs:string">1</right>
 			<viewMode>Normal</viewMode>
+			<userSettingID>0f2d4e02-0999-4ecf-8453-99b88755f980</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
+			<use>false</use>
 			<left xsi:type="dcscor:Field">Событие</left>
 			<comparisonType>InList</comparisonType>
-			<right xsi:type="xs:string">_$Session$_.Start</right>
-			<right xsi:type="xs:string">_$Session$_.Finish</right>
+			<right xsi:type="v8:ValueListType">
+				<v8:valueType/>
+				<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+			</right>
 			<viewMode>Normal</viewMode>
+			<userSettingID>35b39469-a408-4caa-9766-5369ebce7d0c</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<use>false</use>
 			<left xsi:type="dcscor:Field">СтатусТранзакции</left>
 			<comparisonType>Equal</comparisonType>
-			<right xsi:type="xs:string">1</right>
 			<viewMode>Normal</viewMode>
+			<userSettingID>95d0496d-c965-4e9c-bbbf-9fa04559bfba</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">ИмяПриложения</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:string"> </right>
+			<viewMode>Normal</viewMode>
+			<userSettingID>e47870ee-e93c-4d9f-800c-a0e8430b6161</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<left xsi:type="dcscor:Field">ИмяПользователя</left>
 			<comparisonType>Filled</comparisonType>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователь заполнен для события</v8:content>
+				</v8:item>
+			</presentation>
 			<viewMode>Normal</viewMode>
+			<userSettingID>5270cada-598c-4363-8f0a-7a7f431b7506</userSettingID>
 		</item>
 	</filter>
 	<order>
@@ -2948,27 +3109,42 @@
 			<use>false</use>
 			<left xsi:type="dcscor:Field">Уровень</left>
 			<comparisonType>Equal</comparisonType>
-			<right xsi:type="xs:string">1</right>
 			<viewMode>Normal</viewMode>
+			<userSettingID>67f038e8-50fc-465d-b8a7-2e9eaca179a4</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<use>false</use>
 			<left xsi:type="dcscor:Field">Событие</left>
 			<comparisonType>Equal</comparisonType>
-			<right xsi:type="xs:string">_$Access$_.Access</right>
 			<viewMode>Normal</viewMode>
+			<userSettingID>63d78656-2f39-4205-b1c7-daf60d46dc29</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<use>false</use>
 			<left xsi:type="dcscor:Field">СтатусТранзакции</left>
 			<comparisonType>Equal</comparisonType>
-			<right xsi:type="xs:string">1</right>
 			<viewMode>Normal</viewMode>
+			<userSettingID>ceac76a2-b305-4241-a63c-9c317d94194e</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">Метаданные</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:string"> </right>
+			<viewMode>Normal</viewMode>
+			<userSettingID>8362e604-7b88-4057-ae0a-d4ee6293438b</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<left xsi:type="dcscor:Field">Метаданные</left>
 			<comparisonType>Filled</comparisonType>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Метаданные заполнены для события</v8:content>
+				</v8:item>
+			</presentation>
 			<viewMode>Normal</viewMode>
+			<userSettingID>5c5c4363-aa5d-4195-bd25-7bb082625024</userSettingID>
 		</item>
 	</filter>
 	<order>
@@ -3401,24 +3577,34 @@
 			<use>false</use>
 			<left xsi:type="dcscor:Field">Уровень</left>
 			<comparisonType>Equal</comparisonType>
-			<right xsi:type="xs:string">2</right>
 			<viewMode>Normal</viewMode>
+			<userSettingID>98e98253-23ad-4179-8694-6746ea48a56b</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<use>false</use>
 			<left xsi:type="dcscor:Field">Событие</left>
 			<comparisonType>InList</comparisonType>
-			<right xsi:type="xs:string">_$InfoBase$_.TARImportant</right>
-			<right xsi:type="xs:string">_$Job$_.Fail</right>
-			<right xsi:type="xs:string">_$PerformError$_</right>
+			<right xsi:type="v8:ValueListType">
+				<v8:valueType/>
+				<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+			</right>
 			<viewMode>Normal</viewMode>
+			<userSettingID>c696a2cd-28c5-49e4-a4d7-47fa47940749</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<use>false</use>
 			<left xsi:type="dcscor:Field">СтатусТранзакции</left>
 			<comparisonType>Equal</comparisonType>
-			<right xsi:type="xs:string">1</right>
 			<viewMode>Normal</viewMode>
+			<userSettingID>a02f6a69-eabf-4d28-9c99-0c3f8f47e0eb</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">ИмяПриложения</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:string"/>
+			<viewMode>Normal</viewMode>
+			<userSettingID>2847305b-4340-4791-b1fe-50882accc03e</userSettingID>
 		</item>
 	</filter>
 	<order>
@@ -3870,23 +4056,34 @@
 			<use>false</use>
 			<left xsi:type="dcscor:Field">Уровень</left>
 			<comparisonType>Equal</comparisonType>
-			<right xsi:type="xs:string">1</right>
 			<viewMode>Normal</viewMode>
+			<userSettingID>9c98572d-6b26-42ee-a231-85cb7815e28d</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<use>false</use>
 			<left xsi:type="dcscor:Field">Событие</left>
 			<comparisonType>InList</comparisonType>
-			<right xsi:type="xs:string">_$Access$_.AccessDenied</right>
-			<right xsi:type="xs:string">_$Session$_.AuthenticationError</right>
+			<right xsi:type="v8:ValueListType">
+				<v8:valueType/>
+				<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+			</right>
 			<viewMode>Normal</viewMode>
+			<userSettingID>e0e1dd3a-17fa-4dbf-980a-ad09b21a01e6</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<use>false</use>
 			<left xsi:type="dcscor:Field">СтатусТранзакции</left>
 			<comparisonType>Equal</comparisonType>
-			<right xsi:type="xs:string">1</right>
 			<viewMode>Normal</viewMode>
+			<userSettingID>c05baf37-f3f2-427c-849c-49eb1a99a12f</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">ИмяПользователя</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:string"> </right>
+			<viewMode>Normal</viewMode>
+			<userSettingID>8641906d-e7e6-4b31-8d85-37f13ac732e4</userSettingID>
 		</item>
 	</filter>
 	<order>
@@ -4183,25 +4380,30 @@
 			<use>false</use>
 			<left xsi:type="dcscor:Field">Уровень</left>
 			<comparisonType>Equal</comparisonType>
-			<right xsi:type="xs:string">1</right>
 			<viewMode>Normal</viewMode>
+			<userSettingID>27697267-cc53-4dd0-b165-ce7345225562</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<use>false</use>
 			<left xsi:type="dcscor:Field">Событие</left>
 			<comparisonType>InList</comparisonType>
-			<right xsi:type="xs:string">_$Transaction$_.Begin</right>
-			<right xsi:type="xs:string">_$Transaction$_.Commit</right>
-			<right xsi:type="xs:string">_$Transaction$_.Rollback</right>
+			<right xsi:type="v8:ValueListType">
+				<v8:valueType/>
+				<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+			</right>
 			<viewMode>Normal</viewMode>
+			<userSettingID>9fe3d6cf-23bc-4b6f-9276-9fec768e273d</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<use>false</use>
 			<left xsi:type="dcscor:Field">СтатусТранзакции</left>
 			<comparisonType>InList</comparisonType>
-			<right xsi:type="xs:string">1</right>
-			<right xsi:type="xs:string">4</right>
+			<right xsi:type="v8:ValueListType">
+				<v8:valueType/>
+				<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+			</right>
 			<viewMode>Normal</viewMode>
+			<userSettingID>941556ff-81e0-4e8d-8fde-a17f7e3ffa10</userSettingID>
 		</item>
 	</filter>
 	<order>
