@@ -259,16 +259,12 @@
 				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
 					<d5p1:item>
 						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>Данные</d5p1:content>
+						<d5p1:content>Данные ссылочные</d5p1:content>
 					</d5p1:item>
 				</title>
+				<presentationExpression>Выбор Когда НЕ ЗначениеЗаполнено(Данные) Тогда ДанныеСтрокой Иначе Данные Конец</presentationExpression>
 				<valueType>
-					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
 					<TypeSet xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:AnyRef</TypeSet>
-					<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
-						<Length>0</Length>
-						<AllowedLength>Variable</AllowedLength>
-					</StringQualifiers>
 				</valueType>
 				<appearance>
 					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
@@ -380,6 +376,12 @@
 						<d5p1:content>Статус транзакции</d5p1:content>
 					</d5p1:item>
 				</title>
+				<presentationExpression>Выбор Когда СтатусТранзакции = "НетТранзакции" Тогда "Нет транзакции"
+	Когда СтатусТранзакции = "Отменена" Тогда "Отменена"
+	Когда СтатусТранзакции = "НеЗавершена" Тогда "Не завершена"
+	Когда СтатусТранзакции = "Зафиксирована" Тогда "Зафиксирована"
+	Иначе СтатусТранзакции 
+Конец</presentationExpression>
 				<valueType>
 					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
 					<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
@@ -530,6 +532,23 @@
 					</presentation>
 				</availableValue>
 			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДанныеСтрокой</dataPath>
+				<field>ДанныеСтрокой</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Данные строкой</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
+					<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Length>0</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</valueType>
+			</field>
 			<dataSource>ИсточникДанных1</dataSource>
 			<objectName>ТабЖур</objectName>
 		</dataSet>
@@ -586,6 +605,16 @@
 			<sourceExpression>Пользователь</sourceExpression>
 			<destinationExpression>ПользовательИнформационнойБазы.УникальныйИдентификатор</destinationExpression>
 		</dataSetLink>
+		<calculatedField>
+			<dataPath>ДанныеЗначение</dataPath>
+			<expression>Выбор Когда НЕ ЗначениеЗаполнено(Данные) Тогда ДанныеСтрокой Иначе Данные Конец</expression>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Данные</d4p1:content>
+				</d4p1:item>
+			</title>
+		</calculatedField>
 		<parameter>
 			<name>ТекущаяДата</name>
 			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
@@ -1531,7 +1560,7 @@
 			<field>Метаданные</field>
 		</item>
 		<item xsi:type="SelectedItemField">
-			<field>Данные</field>
+			<field>ДанныеЗначение</field>
 		</item>
 		<item xsi:type="SelectedItemField">
 			<field>ПредставлениеДанных</field>
@@ -2116,7 +2145,7 @@
 			</lwsTitle>
 		</item>
 		<item xsi:type="SelectedItemField">
-			<field>Данные</field>
+			<field>ДанныеЗначение</field>
 		</item>
 		<item xsi:type="SelectedItemField">
 			<field>ИмяПользователя</field>
@@ -2169,8 +2198,24 @@
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<use>false</use>
-			<left xsi:type="dcscor:Field">Данные</left>
-			<comparisonType>Filled</comparisonType>
+			<left xsi:type="dcscor:Field">ДанныеСтрокой</left>
+			<comparisonType>Contains</comparisonType>
+			<right xsi:type="xs:string"/>
+			<viewMode>Normal</viewMode>
+			<userSettingID>3854e116-818c-4d98-acfd-e991978619da</userSettingID>
+		</item>
+		<item xsi:type="FilterItemGroup">
+			<groupType>OrGroup</groupType>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ДанныеСтрокой</left>
+				<comparisonType>Filled</comparisonType>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ДанныеЗначение</left>
+				<comparisonType>Filled</comparisonType>
+				<viewMode>Normal</viewMode>
+				<userSettingID>8a501985-c20c-4fe8-a937-db0c02e11db7</userSettingID>
+			</item>
 			<presentation xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -2178,7 +2223,7 @@
 				</v8:item>
 			</presentation>
 			<viewMode>Normal</viewMode>
-			<userSettingID>8a501985-c20c-4fe8-a937-db0c02e11db7</userSettingID>
+			<userSettingID>56b28f4e-731c-4ecd-be1b-a39de852e8ef</userSettingID>
 		</item>
 	</filter>
 	<dataParameters>
@@ -2636,7 +2681,6 @@
 			<userSettingID>1a52c795-226e-44b2-9b99-080d33febd56</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
-			<use>false</use>
 			<left xsi:type="dcscor:Field">ИмяПользователя</left>
 			<comparisonType>Filled</comparisonType>
 			<presentation xsi:type="v8:LocalStringType">
@@ -4734,7 +4778,7 @@
 			<field>Метаданные</field>
 		</item>
 		<item xsi:type="SelectedItemField">
-			<field>Данные</field>
+			<field>ДанныеЗначение</field>
 		</item>
 		<item xsi:type="SelectedItemField">
 			<field>ПредставлениеДанных</field>
@@ -5340,7 +5384,7 @@
 			<field>Комментарий</field>
 		</item>
 		<item xsi:type="SelectedItemField">
-			<field>Данные</field>
+			<field>ДанныеЗначение</field>
 		</item>
 		<item xsi:type="SelectedItemField">
 			<field>ПредставлениеДанных</field>
