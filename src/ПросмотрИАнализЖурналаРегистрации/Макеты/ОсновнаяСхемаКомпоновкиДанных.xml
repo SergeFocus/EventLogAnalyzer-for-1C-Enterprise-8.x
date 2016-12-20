@@ -1677,26 +1677,31 @@
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрВажность</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>f95ecd0c-a327-465e-87e8-25d7e5b69425</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрПользователи</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>26860f2e-a836-43d1-b5fe-2d1545def391</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрСобытия</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>135de0f7-22c4-4fce-aea8-70c1fec62571</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрКомпьютеры</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>85705a2d-668e-4ec0-afec-12c5464e53b0</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрПриложения</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>0b430281-52ad-43eb-ae2f-bea6eb513894</userSettingID>
 		</dcscor:item>
@@ -1708,6 +1713,7 @@
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрМетаданные</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>6ac182c0-feb1-4d9b-94a1-796ba02b735a</userSettingID>
 		</dcscor:item>
@@ -1725,26 +1731,31 @@
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрСтатусТранзакции</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>c893317a-6100-4663-9125-a8a4c04f5ac6</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрСеансы</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>7b56b1c6-d34e-4a6b-b9b6-d99efba339be</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрРабочиеСерверы</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>17694262-297d-448e-8eab-70f1059c9599</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрОсновныеIPПорты</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>71dba70e-d5ad-4e90-981a-ba1102522d89</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрВспомогательныеIPПорты</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>9d55b52a-3cf6-45dd-8010-0cc44babf56e</userSettingID>
 		</dcscor:item>
@@ -2240,31 +2251,37 @@
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрКолонкиЖурналаРегистрации</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>dbee57f5-835a-4f22-9f60-ae1c945233cf</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрВажность</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>8926438f-0fdc-4ba8-82fc-28ea4d58f811</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрПользователи</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>22b9c5d7-8e42-4847-b712-5c115f5f5eb5</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрСобытия</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>75f0e65b-d020-43d0-9b38-a42eff2f5fff</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрКомпьютеры</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>78411b4c-2c86-4c7d-8794-7e01acaa63b2</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрПриложения</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>1bcd753b-e58e-48af-9787-baceca1d9a15</userSettingID>
 		</dcscor:item>
@@ -2275,6 +2292,7 @@
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрМетаданные</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>37694b3f-7b58-435f-98bb-49d7dd444995</userSettingID>
 		</dcscor:item>
@@ -2292,26 +2310,31 @@
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрСтатусТранзакции</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>fe8212fc-5297-4816-8a70-3e527dfee801</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрСеансы</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>43c5d4fa-1115-459f-9570-80c08a4d3695</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрРабочиеСерверы</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>035574f3-6ea7-4e77-bf8a-f9a7f7b740a1</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрОсновныеIPПорты</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>d5c2b837-a7ef-4da0-99f4-a878f673f97a</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрВспомогательныеIPПорты</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>c70b977b-dc1e-4db3-b897-0b9261c95e10</userSettingID>
 		</dcscor:item>
@@ -2695,31 +2718,37 @@
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрКолонкиЖурналаРегистрации</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>6000d157-71ba-41ff-abb2-de88ed598f5e</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрВажность</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>a817fd67-7509-4c98-9a6b-10b437a6674a</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрПользователи</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>1ad39dd2-1b78-421c-b025-727df76d2d6f</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрСобытия</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>01de9e55-8110-4866-9ae5-8ef81187c0a3</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрКомпьютеры</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>aa344521-5605-4c99-8c5c-19168dcc1f4e</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрПриложения</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>621f10de-2e25-48e7-8151-aefc6df42d3a</userSettingID>
 		</dcscor:item>
@@ -2731,6 +2760,7 @@
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрМетаданные</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>3bf8663c-b695-4e6a-8bc7-adb754f48af0</userSettingID>
 		</dcscor:item>
@@ -2748,26 +2778,31 @@
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрСтатусТранзакции</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>78f52efd-2e1b-4c84-98c9-a14fe87e887f</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрСеансы</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>d4cc075e-a56e-46b6-93e1-c1a643f6e8da</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрРабочиеСерверы</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>63f9c42f-2abc-4de6-90f3-070ebc4928b3</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрОсновныеIPПорты</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>61336b27-bd4a-44c9-86d2-c1c95cd7c5ee</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрВспомогательныеIPПорты</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>11c2793d-5994-4719-935f-62f181ae02e4</userSettingID>
 		</dcscor:item>
@@ -3122,31 +3157,37 @@
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрКолонкиЖурналаРегистрации</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>c809f9de-9084-455a-9168-500fb676630b</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрВажность</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>6499a21e-c976-4935-8cf8-34d35ae5bb9b</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрПользователи</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>f99dc0ec-24c9-4a30-947a-da18ac2de141</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрСобытия</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>edf49603-ff88-4469-8443-839febd72248</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрКомпьютеры</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>2af61b4d-c4a9-4581-9302-d0a1279f5d08</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрПриложения</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>cc8dfda9-eacb-42a5-8aff-57baae169efd</userSettingID>
 		</dcscor:item>
@@ -3158,6 +3199,7 @@
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрМетаданные</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>03836d1d-a3a0-4ebf-8e2b-e9d0e317daec</userSettingID>
 		</dcscor:item>
@@ -3175,26 +3217,31 @@
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрСтатусТранзакции</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>18ff6042-d1d5-4206-9fcb-db6c438f1b7c</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрСеансы</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>c49a7bf3-ede5-4032-966b-54c52d79dbdb</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрРабочиеСерверы</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>c1e0c4a7-aecd-4db9-bfa6-16f911b417e2</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрОсновныеIPПорты</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>ca63d734-18e7-46c0-b3b6-1bac9762a27f</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрВспомогательныеIPПорты</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>3415499d-4bf0-4bf7-a3e7-93533cac7e39</userSettingID>
 		</dcscor:item>
@@ -3616,31 +3663,37 @@
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрКолонкиЖурналаРегистрации</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>c4c8c5b1-c58d-4af0-9f51-690846f25585</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрВажность</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>e0856119-c12a-4b28-8c18-462c3da6f3b8</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрПользователи</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>c9c425c6-ebc5-4a95-9204-5dda3cbcdb68</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрСобытия</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>a15d925f-4959-42da-a69c-136a97d6854e</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрКомпьютеры</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>aaa96520-4483-4691-9b9c-cd81befa3d7a</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрПриложения</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>e46ffcf9-4c16-4d43-9d40-3f4759cae85e</userSettingID>
 		</dcscor:item>
@@ -3652,6 +3705,7 @@
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрМетаданные</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>cfeed4f1-545c-420b-8a21-25885c9f4e13</userSettingID>
 		</dcscor:item>
@@ -3669,26 +3723,31 @@
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрСтатусТранзакции</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>47aba981-b9f4-46f0-888e-6793d76e6f4b</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрСеансы</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>db4cded2-79c3-49db-9859-a31d9342c4a5</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрРабочиеСерверы</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>df374d71-d8ee-40bb-ac5d-df62a85878cc</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрОсновныеIPПорты</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>4dcc5da9-f449-4843-9f3e-e9be3a420e29</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрВспомогательныеIPПорты</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>e8daeefc-4917-4359-aa53-b66c748987e9</userSettingID>
 		</dcscor:item>
@@ -4220,31 +4279,37 @@
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрКолонкиЖурналаРегистрации</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>fe83a506-c7e1-4252-b5e4-41099d714016</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрВажность</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>82c64b5e-c64b-4e83-bc4c-825a725a3098</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрПользователи</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>db9ee7ae-337d-4239-84d0-bc9761ef6f52</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрСобытия</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>f2891e90-38f5-409d-a720-e0e7fa58e518</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрКомпьютеры</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>e187d001-c6f1-4e6b-90f1-42cd27a39361</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрПриложения</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>751d3b01-aef3-4f7c-a4af-4931c3a18b57</userSettingID>
 		</dcscor:item>
@@ -4256,6 +4321,7 @@
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрМетаданные</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>8b34ac12-579a-4c33-9831-b5aaf64ba5aa</userSettingID>
 		</dcscor:item>
@@ -4273,26 +4339,31 @@
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрСтатусТранзакции</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>26270ebd-2b6e-47e3-a8b5-d92dfdd9963c</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрСеансы</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>711a5659-4ff0-4494-9843-07f1b184893d</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрРабочиеСерверы</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>993f8212-9f85-473c-8fb9-3907ef808e57</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрОсновныеIPПорты</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>371593fb-0693-4bb8-ae3e-2ad7f1b0b2d8</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрВспомогательныеIPПорты</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>90d0d4f7-e5e5-4f0c-830e-8322699a4252</userSettingID>
 		</dcscor:item>
@@ -4788,6 +4859,7 @@
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрКолонкиЖурналаРегистрации</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>79b82ae1-0e52-4fe4-ac2e-4af717b3585e</userSettingID>
 		</dcscor:item>
@@ -4799,6 +4871,7 @@
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрПользователи</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>a513024a-1bd4-4499-a0e8-46381a595ddc</userSettingID>
 		</dcscor:item>
@@ -4811,11 +4884,13 @@
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрКомпьютеры</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>286e6a0f-0495-437d-8a08-64c19a267cc8</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрПриложения</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>c26b8f85-fc02-4036-aa08-1262f46f1bb2</userSettingID>
 		</dcscor:item>
@@ -4827,6 +4902,7 @@
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрМетаданные</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>6279025b-54fa-453e-a61a-e98db5ce104e</userSettingID>
 		</dcscor:item>
@@ -4844,26 +4920,31 @@
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрСтатусТранзакции</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>17fb7066-076c-4384-b13e-8909146096d0</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрСеансы</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>65747ffe-2358-49cf-b059-75d0799c559d</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрРабочиеСерверы</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>7f33cf74-4985-481c-af85-b54cd781e05f</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрОсновныеIPПорты</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>bd0d7bc7-ada3-4c7b-9af4-40b7ed053222</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрВспомогательныеIPПорты</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>02e22200-3d7b-4771-a3f3-e9a6c73b0a54</userSettingID>
 		</dcscor:item>
@@ -5378,16 +5459,19 @@
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрКолонкиЖурналаРегистрации</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>33253faa-97ad-4b8b-90ae-79a41ca1c387</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрВажность</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>e3f802ea-9297-479e-8992-060caf123a5c</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрПользователи</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>725e60cf-c7b8-48eb-aa3a-c774e263012b</userSettingID>
 		</dcscor:item>
@@ -5400,11 +5484,13 @@
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрКомпьютеры</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>1bae4c6a-25cd-4b02-aaac-ffd5c2e75e93</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрПриложения</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>60629770-7688-4547-8e59-c150a7ca6e7f</userSettingID>
 		</dcscor:item>
@@ -5416,6 +5502,7 @@
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрМетаданные</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>47043506-0def-4665-bded-381a42929a9b</userSettingID>
 		</dcscor:item>
@@ -5433,26 +5520,31 @@
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрСтатусТранзакции</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>796defb1-c37a-456d-b42d-65751456fd84</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрСеансы</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>6a1ef0a9-377e-46c1-90fb-956e3fdd2a31</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрРабочиеСерверы</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>c9ba2f3b-003b-4ad3-816f-c2c5a4812c28</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрОсновныеIPПорты</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>947d67f2-eca3-4c45-b455-a254a7950a8a</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрВспомогательныеIPПорты</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>8f0edcf3-4faf-4c42-9bb1-4351949b1f25</userSettingID>
 		</dcscor:item>
@@ -5808,16 +5900,19 @@
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрКолонкиЖурналаРегистрации</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>8137c3d3-aae8-4c5e-b22d-1bc76993a688</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрВажность</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>0877ea05-cf9c-410a-aab6-ab11de2067a2</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрПользователи</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>0ce01ea8-e453-478a-8453-07442372b93f</userSettingID>
 		</dcscor:item>
@@ -5831,11 +5926,13 @@
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрКомпьютеры</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>46d03239-aa8f-4346-9d1d-32670ce567a4</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрПриложения</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>6c985e9e-534e-41fb-ad5d-3fb0e4f5229d</userSettingID>
 		</dcscor:item>
@@ -5847,6 +5944,7 @@
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрМетаданные</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>b08ad5cf-ed7d-4efb-88b6-f94140cc649b</userSettingID>
 		</dcscor:item>
@@ -5864,26 +5962,31 @@
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрСтатусТранзакции</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>a1af47d1-7796-493a-96ed-cce59c662eb9</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрСеансы</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>f3fa0ddd-744f-4703-9bf5-21b8cb21205e</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрРабочиеСерверы</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>5884426a-43ee-4432-b1c8-fe64f5ae6393</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрОсновныеIPПорты</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>78f7cd10-3e74-4781-875a-b6f691337d92</userSettingID>
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ФильтрВспомогательныеIPПорты</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>10400df4-e634-4c9e-980e-4f43ad774aa9</userSettingID>
 		</dcscor:item>
