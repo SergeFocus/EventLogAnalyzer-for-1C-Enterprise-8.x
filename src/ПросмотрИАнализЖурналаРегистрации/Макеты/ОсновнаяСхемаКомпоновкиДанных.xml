@@ -23,6 +23,7 @@
 						<AllowedLength>Variable</AllowedLength>
 					</StringQualifiers>
 				</valueType>
+				<appearance/>
 				<availableValue>
 					<value xsi:type="xs:string"> </value>
 					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
@@ -48,6 +49,7 @@
 						<DateFractions>DateTime</DateFractions>
 					</DateQualifiers>
 				</valueType>
+				<appearance/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Пользователь</dataPath>
@@ -61,6 +63,7 @@
 				<valueType>
 					<Type xmlns="http://v8.1c.ru/8.1/data/core">UUID</Type>
 				</valueType>
+				<appearance/>
 				<availableValue>
 					<value xsi:nil="true"/>
 					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
@@ -87,6 +90,7 @@
 						<AllowedLength>Variable</AllowedLength>
 					</StringQualifiers>
 				</valueType>
+				<appearance/>
 				<availableValue>
 					<value xsi:type="xs:string"> </value>
 					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
@@ -118,6 +122,7 @@
 						<AllowedLength>Variable</AllowedLength>
 					</StringQualifiers>
 				</valueType>
+				<appearance/>
 				<availableValue>
 					<value xsi:type="xs:string"> </value>
 					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
@@ -200,6 +205,7 @@
 						<AllowedLength>Variable</AllowedLength>
 					</StringQualifiers>
 				</valueType>
+				<appearance/>
 				<availableValue>
 					<value xsi:type="xs:string"> </value>
 					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
@@ -226,6 +232,7 @@
 						<AllowedLength>Variable</AllowedLength>
 					</StringQualifiers>
 				</valueType>
+				<appearance/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Метаданные</dataPath>
@@ -243,6 +250,7 @@
 						<AllowedLength>Variable</AllowedLength>
 					</StringQualifiers>
 				</valueType>
+				<appearance/>
 				<availableValue>
 					<value xsi:type="xs:string"> </value>
 					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
@@ -264,11 +272,11 @@
 				</title>
 				<presentationExpression>Выбор Когда НЕ ЗначениеЗаполнено(Данные) Тогда ДанныеСтрокой Иначе Данные Конец</presentationExpression>
 				<valueType>
-					<TypeSet xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:AnyRef</TypeSet>
+					<TypeId xmlns="http://v8.1c.ru/8.1/data/core">280f5f0e-9c8a-49cc-bf6d-4d296cc17a63</TypeId>
 				</valueType>
 				<appearance>
 					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
-						<parameter>MinimumWidth</parameter>
+						<parameter>МинимальнаяШирина</parameter>
 						<value xsi:type="xs:decimal">50</value>
 					</item>
 				</appearance>
@@ -289,6 +297,7 @@
 						<AllowedLength>Variable</AllowedLength>
 					</StringQualifiers>
 				</valueType>
+				<appearance/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ИмяПользователя</dataPath>
@@ -306,6 +315,7 @@
 						<AllowedLength>Variable</AllowedLength>
 					</StringQualifiers>
 				</valueType>
+				<appearance/>
 				<availableValue>
 					<value xsi:type="xs:string"> </value>
 					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
@@ -332,6 +342,7 @@
 						<AllowedLength>Variable</AllowedLength>
 					</StringQualifiers>
 				</valueType>
+				<appearance/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ПредставлениеСобытия</dataPath>
@@ -349,6 +360,7 @@
 						<AllowedLength>Variable</AllowedLength>
 					</StringQualifiers>
 				</valueType>
+				<appearance/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ПредставлениеМетаданных</dataPath>
@@ -366,6 +378,7 @@
 						<AllowedLength>Variable</AllowedLength>
 					</StringQualifiers>
 				</valueType>
+				<appearance/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>СтатусТранзакции</dataPath>
@@ -389,6 +402,7 @@
 						<AllowedLength>Variable</AllowedLength>
 					</StringQualifiers>
 				</valueType>
+				<appearance/>
 				<availableValue>
 					<value xsi:type="xs:string"> </value>
 					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
@@ -415,6 +429,7 @@
 						<AllowedLength>Variable</AllowedLength>
 					</StringQualifiers>
 				</valueType>
+				<appearance/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Сеанс</dataPath>
@@ -433,6 +448,7 @@
 						<AllowedSign>Any</AllowedSign>
 					</NumberQualifiers>
 				</valueType>
+				<appearance/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Соединение</dataPath>
@@ -451,6 +467,7 @@
 						<AllowedSign>Any</AllowedSign>
 					</NumberQualifiers>
 				</valueType>
+				<appearance/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>РабочийСервер</dataPath>
@@ -468,6 +485,7 @@
 						<AllowedLength>Variable</AllowedLength>
 					</StringQualifiers>
 				</valueType>
+				<appearance/>
 				<availableValue>
 					<value xsi:type="xs:string"> </value>
 					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
@@ -495,6 +513,7 @@
 						<AllowedSign>Any</AllowedSign>
 					</NumberQualifiers>
 				</valueType>
+				<appearance/>
 				<availableValue>
 					<value xsi:type="xs:decimal">0</value>
 					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
@@ -522,6 +541,7 @@
 						<AllowedSign>Any</AllowedSign>
 					</NumberQualifiers>
 				</valueType>
+				<appearance/>
 				<availableValue>
 					<value xsi:type="xs:decimal">0</value>
 					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
@@ -548,6 +568,7 @@
 						<AllowedLength>Variable</AllowedLength>
 					</StringQualifiers>
 				</valueType>
+				<appearance/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>МоментВремени</dataPath>
@@ -566,6 +587,7 @@
 						<AllowedSign>Nonnegative</AllowedSign>
 					</NumberQualifiers>
 				</valueType>
+				<appearance/>
 			</field>
 			<dataSource>ИсточникДанных1</dataSource>
 			<objectName>ТабЖур</objectName>
@@ -581,6 +603,7 @@
 						<d5p1:content>Пользователь информационной базы.Имя</d5p1:content>
 					</d5p1:item>
 				</title>
+				<appearance/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ПользовательИнформационнойБазы.ПолноеИмя</dataPath>
@@ -591,6 +614,7 @@
 						<d5p1:content>Пользователь информационной базы.Полное имя</d5p1:content>
 					</d5p1:item>
 				</title>
+				<appearance/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ПользовательИнформационнойБазы.УникальныйИдентификатор</dataPath>
@@ -604,6 +628,7 @@
 				<valueType>
 					<Type xmlns="http://v8.1c.ru/8.1/data/core">UUID</Type>
 				</valueType>
+				<appearance/>
 			</field>
 			<field xsi:type="DataSetFieldFolder">
 				<dataPath>ПользовательИнформационнойБазы</dataPath>
@@ -632,6 +657,7 @@
 					<d4p1:content>Данные</d4p1:content>
 				</d4p1:item>
 			</title>
+			<appearance/>
 		</calculatedField>
 		<parameter>
 			<name>ТекущаяДата</name>
@@ -1114,7 +1140,7 @@
 				</d4p1:item>
 			</title>
 			<valueType>
-				<TypeSet xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:AnyRef</TypeSet>
+				<TypeId xmlns="http://v8.1c.ru/8.1/data/core">280f5f0e-9c8a-49cc-bf6d-4d296cc17a63</TypeId>
 			</valueType>
 			<value xsi:nil="true"/>
 			<useRestriction>false</useRestriction>
@@ -1836,6 +1862,7 @@
 		<selection>
 			<item xsi:type="SelectedItemAuto"/>
 		</selection>
+		<outputParameters/>
 	</item>
 </Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
 <Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -2435,6 +2462,7 @@
 		<selection>
 			<item xsi:type="SelectedItemAuto"/>
 		</selection>
+		<outputParameters/>
 		<item xsi:type="StructureItemGroup">
 			<groupItems>
 				<item xsi:type="GroupItemField">
@@ -2451,6 +2479,7 @@
 			<selection>
 				<item xsi:type="SelectedItemAuto"/>
 			</selection>
+			<outputParameters/>
 			<item xsi:type="StructureItemGroup">
 				<order>
 					<item xsi:type="OrderItemAuto"/>
@@ -2458,6 +2487,7 @@
 				<selection>
 					<item xsi:type="SelectedItemAuto"/>
 				</selection>
+				<outputParameters/>
 			</item>
 		</item>
 	</item>
@@ -2914,10 +2944,12 @@
 			<selection>
 				<item xsi:type="SelectedItemAuto"/>
 			</selection>
+			<outputParameters/>
 		</point>
 		<selection>
 			<item xsi:type="SelectedItemAuto"/>
 		</selection>
+		<outputParameters/>
 	</item>
 </Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
 <Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -3358,6 +3390,7 @@
 		<selection>
 			<item xsi:type="SelectedItemAuto"/>
 		</selection>
+		<outputParameters/>
 		<item xsi:type="StructureItemChart">
 			<point>
 				<groupItems>
@@ -3375,10 +3408,12 @@
 				<selection>
 					<item xsi:type="SelectedItemAuto"/>
 				</selection>
+				<outputParameters/>
 			</point>
 			<selection>
 				<item xsi:type="SelectedItemAuto"/>
 			</selection>
+			<outputParameters/>
 		</item>
 	</item>
 </Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
@@ -3884,6 +3919,7 @@
 			<selection>
 				<item xsi:type="SelectedItemAuto"/>
 			</selection>
+			<outputParameters/>
 		</column>
 		<row>
 			<groupItems>
@@ -3901,6 +3937,7 @@
 			<selection>
 				<item xsi:type="SelectedItemAuto"/>
 			</selection>
+			<outputParameters/>
 			<item>
 				<groupItems>
 					<item xsi:type="GroupItemField">
@@ -3928,11 +3965,13 @@
 						<field>ПользовательскиеПоля.Поле27</field>
 					</item>
 				</selection>
+				<outputParameters/>
 			</item>
 		</row>
 		<selection>
 			<item xsi:type="SelectedItemAuto"/>
 		</selection>
+		<outputParameters/>
 	</item>
 </Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
 <Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -4488,6 +4527,7 @@
 		<selection>
 			<item xsi:type="SelectedItemAuto"/>
 		</selection>
+		<outputParameters/>
 	</item>
 </Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
 <Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -5075,6 +5115,7 @@
 		<selection>
 			<item xsi:type="SelectedItemAuto"/>
 		</selection>
+		<outputParameters/>
 		<item xsi:type="StructureItemGroup">
 			<groupItems>
 				<item xsi:type="GroupItemField">
@@ -5091,6 +5132,7 @@
 			<selection>
 				<item xsi:type="SelectedItemAuto"/>
 			</selection>
+			<outputParameters/>
 			<item xsi:type="StructureItemGroup">
 				<order>
 					<item xsi:type="OrderItemAuto"/>
@@ -5098,6 +5140,7 @@
 				<selection>
 					<item xsi:type="SelectedItemAuto"/>
 				</selection>
+				<outputParameters/>
 			</item>
 		</item>
 	</item>
@@ -5681,6 +5724,7 @@
 		<selection>
 			<item xsi:type="SelectedItemAuto"/>
 		</selection>
+		<outputParameters/>
 		<item xsi:type="StructureItemGroup">
 			<order>
 				<item xsi:type="OrderItemAuto"/>
@@ -5688,6 +5732,7 @@
 			<selection>
 				<item xsi:type="SelectedItemAuto"/>
 			</selection>
+			<outputParameters/>
 		</item>
 	</item>
 </Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
@@ -6129,6 +6174,7 @@
 		<selection>
 			<item xsi:type="SelectedItemAuto"/>
 		</selection>
+		<outputParameters/>
 		<item xsi:type="StructureItemGroup">
 			<order>
 				<item xsi:type="OrderItemAuto"/>
@@ -6136,6 +6182,7 @@
 			<selection>
 				<item xsi:type="SelectedItemAuto"/>
 			</selection>
+			<outputParameters/>
 		</item>
 	</item>
 </Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
