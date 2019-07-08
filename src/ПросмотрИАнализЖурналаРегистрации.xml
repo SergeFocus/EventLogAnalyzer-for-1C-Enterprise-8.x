@@ -26,7 +26,7 @@
 			<DefaultSettingsForm>ExternalReport.ПросмотрИАнализЖурналаРегистрации.Form.ФормаНастроекУправляемая</DefaultSettingsForm>
 			<AuxiliarySettingsForm/>
 			<DefaultVariantForm>ExternalReport.ПросмотрИАнализЖурналаРегистрации.Form.ФормаВариантаУправляемая</DefaultVariantForm>
-			<VariantsStorage/>
+			<VariantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</VariantsStorage>
 			<SettingsStorage/>
 		</Properties>
 		<ChildObjects>
